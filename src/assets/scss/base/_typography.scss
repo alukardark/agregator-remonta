@@ -1,0 +1,13 @@
+body {
+  color: $text-color;
+  font-family: $font-basic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: normal;
+  background: #fff;
+}
+h1, h2, h3, h4 {
+  font-weight: 500;
+  line-height: 1.16;
+  margin-top: 0;
+}

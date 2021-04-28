@@ -1,0 +1,25 @@
+.btn {
+  display: inline-block;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 1;
+  text-align: center;
+  @media screen and (max-width: $xl) {
+    font-size: 22px;
+  }
+  @media screen and (max-width: $sm) {
+    font-size: 18px;
+  }
+  &--main {
+    background-color: $color;
+    color: #fff;
+    padding: 20px 35px;
+    &:hover {
+      background-color: $color-hover;
+    }
+    @media screen and (max-width: $sm) {
+      padding: 15px 30px;
+    }
+  }
+}

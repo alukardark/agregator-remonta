@@ -1,0 +1,140 @@
+.home-legal {
+  background: #F5F8FB;
+  padding-top: 88px;
+  padding-bottom: 104px;
+  position: relative;
+  overflow: hidden;
+
+  &__name {
+
+    h2 {
+      text-align: left;
+      margin-bottom: 43px;
+    }
+  }
+  &__introtext {
+    font-size: 20px;
+    line-height: 154.7%;
+    color: #393939;
+  }
+  &__more {
+    margin-top: 56px;
+  }
+  .d-more a {
+    justify-content: left;
+  }
+  &__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 1700px) {
+  .home-legal {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__img {
+
+      img {
+        width: 721px;
+        display: block;
+      }
+    }
+  }
+}
+@media (max-width: 1480px) {
+  .home-legal {
+
+    &__img {
+      right: -50px;
+    }
+  }
+}
+@media (max-width: 1370px) {
+  .home-legal {
+
+    &__name {
+
+      h2 {
+        margin-bottom: 30px;
+        font-size: 44px;
+        line-height: 48px;
+      }
+    }
+    &__more {
+      margin-top: 30px;
+    }
+    &__introtext {
+      max-width: 470px;
+
+      br {
+        display: none;
+      }
+    }
+    &__img {
+
+      img {
+        width: 620px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .home-legal {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+    &__name {
+
+      h2 {
+        margin-bottom: 20px;
+        font-size: 35px;
+        line-height: 40px;
+      }
+    }
+    &__more {
+      margin-top: 20px;
+    }
+    .d-more a {
+      font-size: 16px;
+    }
+    &__introtext {
+      max-width: 470px;
+      font-size: 16px;
+    }
+
+    &__img {
+
+      img {
+        width: 500px;
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  .home-legal__img img {
+    display: none;
+  }
+  .home-legal__name h2 {
+    text-align: center;
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 40px;
+
+    br {
+      display: none;
+    }
+  }
+  .home-legal__introtext {
+    text-align: center;
+  }
+  .home-legal__more {
+    margin-top: 40px;
+  }
+  .home-legal .d-more a {
+    justify-content: center;
+  }
+}

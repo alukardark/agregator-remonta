@@ -1,0 +1,24 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+
+@font-face {
+	font-display: swap;
+	font-family: "GT Eesti Pro Display";
+	src: local("GT Eesti Pro Display"),
+	url("../fonts/GTEestiProDisplay-Regular.woff2") format("woff2"),
+	url("../fonts/GTEestiProDisplay-Regular.woff") format("woff");
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-display: swap;
+	font-family: "GT Eesti Pro Display";
+	src: local("GT Eesti Pro Display"),
+	url("../fonts/GTEestiProText-Bold.woff2") format("woff2"),
+	url("../fonts/GTEestiProText-Bold.woff") format("woff");
+	font-style: normal;
+	font-weight: 700;
+}
