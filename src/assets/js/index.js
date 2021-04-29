@@ -3,7 +3,6 @@ import Choices from 'choices.js';
 import MicroModal from 'micromodal';
 import Inputmask from "inputmask";
 import SimpleBar from 'simplebar';
-// import Swiper from "swiper";
 import 'lightgallery.js';
 import './map.js';
 
@@ -100,12 +99,20 @@ document.querySelectorAll('input[type="tel"]').forEach(el => {
     }).mask(el);
 });
 
+//Плавная прокрутка
+const anchors = document.querySelectorAll('a[href*="#"]');
+for (let anchor of anchors) {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        let blockID = anchor.getAttribute('href');
+        blockID = blockID.substring(blockID.lastIndexOf("#"));
+
+        document.querySelector(blockID).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        })
+    })
+}
 
 
-
-// new Swiper('.regions', {
-//     resistanceRatio : .45,
-//     direction: 'vertical',
-//     slidesPerView: 'auto',
-//     freeMode: true,
-// });

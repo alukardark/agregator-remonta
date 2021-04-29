@@ -190,8 +190,6 @@
     align-items: center;
     padding: 0px 10px 0 15px;
     position: relative;
-  }
-  &__metro {
     i {
       width: 7px;
       height: 7px;
@@ -200,6 +198,7 @@
       margin-right: 8px;
     }
   }
+
   &__street {
     font-weight: 300;
     font-size: 14px;
@@ -534,7 +533,14 @@
   &__header {
     display: flex;
   }
+  &__address-text{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 125.7%;
+    color: rgba(40, 59, 80, 0.82);
+    margin: 12px 0 0;
 
+  }
 }
 
 @media (max-width: $lg) {
@@ -680,5 +686,39 @@
     &__review-text{
       margin-bottom: 15px;
     }
+
+
+  }
+}
+@media (max-width: $md) {
+  .card {
+    &__address-work-time{
+      width: 100%;
+    }
+  }
+}
+@media (max-width: $xs) {
+  .card {
+    &__metro{
+    }
+    &__street{
+      margin-top: 10px;
+    }
+    &__address-box{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__btns{
+      width: 100%;
+      justify-content: space-between;
+    }
+    &__route {
+      width: 39%;
+      margin-right: 0;
+    }
+    &__courier {
+      width: 58%;
+    }
+
   }
 }

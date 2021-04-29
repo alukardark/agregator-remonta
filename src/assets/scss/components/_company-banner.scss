@@ -1,0 +1,61 @@
+.company-banner {
+  height: 366px;
+  background-image: url('../img/ruki-iz-plech-banner.png');
+  background-color: #F8CC46;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  border-radius: 0px 5px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+  &__box {
+    max-width: 510px;
+  }
+  h2 {
+    font-weight: bold;
+    font-size: 42px;
+    color: #3D3D3D;
+  }
+  p {
+    font-weight: normal;
+    font-size: 20px;
+    color: #3D3D3D;
+    margin: 0;
+    line-height: 150.2%;
+  }
+}
+
+@media (max-width: $xl) {
+  .company-banner {
+    border-radius: 0;
+  }
+
+}
+@media (max-width: $lg) {
+  .company-banner {
+    padding: 20px;
+    height: 300px;
+    background-size: 400px;
+
+    h2 {
+      font-size: 36px;
+    }
+    p {
+      font-size: 16px;
+    }
+    &__box {
+      max-width: 450px;
+    }
+  }
+}
+@media (max-width: $md) {
+  .company-banner {
+    height: auto;
+    background-position: calc(50% - 30px) 100%;
+    padding: 55px 20px 300px ;
+    &__box {
+      max-width: 100%;
+    }
+  }
+}

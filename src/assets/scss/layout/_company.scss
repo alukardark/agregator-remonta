@@ -1,0 +1,443 @@
+.company {
+  &__sticky {
+    position: sticky;
+    top: 0;
+    width: 195px;
+    background: #E9F0F6;
+    border-radius: 0px 0px 0px 5px;
+    padding: 45px 15px 15px;
+  }
+  &__base {
+    width: 945px;
+  }
+  &__logo {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 150px;
+    min-width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+
+  &__tel {
+    background: #195DF6;
+    border-radius: 5px;
+    font-weight: normal;
+    font-size: 18px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 43px;
+    &:hover {
+      background: #FA8F43;
+    }
+  }
+  &__master {
+    background: #FA8F43;
+    border-radius: 5px;
+    font-weight: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 43px;
+    &:hover {
+      background: #ea761e;
+    }
+  }
+  &__nav {
+    margin-top: 77px;
+    li {
+      margin-bottom: 18px;
+      &:last-of-type {
+        a {
+          color: rgba(40, 59, 80, 0.53);
+          &:hover {
+            color: #195DF6;
+          }
+        }
+      }
+    }
+    a {
+      font-weight: normal;
+      font-size: 17px;
+      color: #283B50;
+      &:hover {
+        color: #195DF6;
+      }
+    }
+  }
+
+  &__about {
+    padding: 43px 50px 50px;
+    background: #FFFFFF;
+    border-radius: 0px 0px 5px 5px;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  &__row {
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      left: -50px;
+      right: -50px;
+      bottom: 0;
+      background: #E9F0F6;
+      height: 1px;
+    }
+  }
+  &__about-header {
+    display: flex;
+    padding-bottom: 25px;
+    justify-content: space-between;
+    h1 {
+      font-weight: normal;
+      font-size: 48px;
+      line-height: 56px;
+      color: #195DF6;
+      margin: 0 0 5px;
+    }
+  }
+
+  &__about-btns {
+    width: 210px;
+    .company__tel {
+      font-size: 20px;
+      height: 49px;
+      margin-bottom: 15px;
+    }
+    .company__master {
+      font-size: 18px;
+      height: 49px;
+      margin-bottom: 0;
+    }
+  }
+  &__desc {
+    padding: 30px 0;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150.2%;
+    color: #283B50;
+  }
+  &__signature {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 170.7%;
+    color: rgba(40, 59, 80, 0.53);
+    margin-bottom: 10px;
+  }
+  &__about-footer {
+    padding-top: 30px;
+  }
+  &__tagline {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 170.7%;
+    color: #283B50;
+  }
+  &__about-footer-row {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+  }
+  &__about-footer-box {
+    h4 {
+      font-weight: normal;
+      font-size: 22px;
+      color: #283B50;
+    }
+    &:first-of-type {
+      border-right: 1px solid #E9F0F6;
+      margin-right: 50px;
+      padding-right: 40px;
+      width: 47%;
+    }
+    &:last-of-type {
+      width: 53%;
+      flex-direction: column;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__about-benefits {
+
+    li {
+      font-size: 18px;
+      color: #283B50;
+      font-weight: 300;
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 15px;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+      &:before {
+        content: '';
+        background: #195DF6;
+        width: 10px;
+        height: 2px;
+        position: absolute;
+        top: 10px;
+        left: 0;
+      }
+    }
+
+  }
+  &__about-benefits-big {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    li {
+      display: flex;
+      width: 100px;
+
+      flex-direction: column;
+      strong {
+        font-weight: normal;
+        font-size: 45px;
+        color: #195DF6;
+      }
+      span {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 131.2%;
+        color: #283B50;
+
+      }
+    }
+  }
+  &__about-master {
+    border: 1px solid #195DF6;
+    border-radius: 5px;
+    width: 215px;
+    height: 41px;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 17px;
+    color: #283B50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      background: #FA8F43;
+      color: #fff;
+      border-color: #FA8F43;
+    }
+
+  }
+
+  &__addresses {
+    overflow: hidden;
+    background: #FFFFFF;
+    margin-bottom: 58px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    h3 {
+      font-weight: normal;
+      font-size: 22px;
+      color: #283B50;
+      span {
+        color: rgba(40, 59, 80, 0.53);
+      }
+
+    }
+    .card__addresses {
+      padding: 0;
+    }
+    .card__address {
+      margin-bottom: 30px;
+    }
+    .card__btns {
+      margin-top: 17px;
+    }
+    .d-more {
+      a {
+        font-size: 16px;
+        justify-content: flex-start;
+        i {
+          background-size: contain;
+          width: 25px;
+          height: 8px;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  &__addresses-text {
+    padding: 30px 15px 40px 50px;
+    width: 545px;
+  }
+  &__addresses-map {
+    height: 100%;
+    width: 400px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    .ymaps-2-1-78-copyrights-pane {
+      display: none;
+    }
+  }
+
+}
+
+@media (max-width: $xl) {
+  .company {
+    .container.case {
+      padding: 0;
+      max-width: 100%;
+    }
+    &__base {
+      width: 100%;
+    }
+    &__sticky {
+      position: static;
+      width: 100%;
+      padding: 15px 20px 15px;
+      border-radius: 0;
+    }
+    &__nav {
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        margin-right: 20px;
+      }
+    }
+    &__top {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__btns-wrap {
+      width: 170px;
+    }
+    &__logo {
+      margin: 0 40px 0 0;
+    }
+    &__nav {
+      margin-top: 25px;
+      padding-bottom: 0;
+    }
+    &__master {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: $lg) {
+  .company {
+    .company__row {
+      &:after {
+        left: -20px;
+        right: -20px;
+      }
+    }
+    .company__about {
+      padding: 30px 20px 50px;
+    }
+    &__about-btns {
+      display: none;
+    }
+    &__desc {
+      font-size: 17px;
+    }
+
+    &__about-benefits {
+      li {
+        font-size: 17px;
+      }
+    }
+    &__about-benefits-big {
+      margin-bottom: 40px;
+      max-width: 400px;
+      li {
+        strong {
+          font-size: 36px;
+        }
+        span {
+          font-size: 16px;
+        }
+        &:last-of-type {
+          text-align: right;
+        }
+      }
+    }
+
+
+
+    &__addresses {
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
+    &__addresses-text {
+      width: 100%;
+      padding: 30px 15px 40px;
+    }
+    &__addresses-map {
+      position: static;
+      width: 100%;
+      height: 260px;
+    }
+    .card__address-work-time{
+      //margin: 0;
+    }
+
+  }
+}
+
+@media (max-width: $md) {
+  .company {
+    &__logo {
+      width: 100px;
+      min-width: 100px;
+      height: 100px;
+      margin: 0 15px 0 0;
+    }
+    &__nav {
+      a {
+        font-size: 16px;
+      }
+    }
+    &__about-footer-row {
+      padding-top: 10px;
+      flex-direction: column;
+    }
+    &__about-footer-box {
+      &:first-of-type {
+        margin-right: 0;
+        padding-right: 0;
+        border: none;
+        width: 100%;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #E9F0F6;
+        margin-bottom: 20px;
+      }
+      &:last-of-type {
+        width: 100%;
+      }
+    }
+    &__about-master {
+      width: 100%;
+      height: 48px;
+      font-size: 16px;
+    }
+
+
+
+    .card__address-work-time{
+      margin-bottom: 0;
+    }
+
+  }
+}
