@@ -84,7 +84,6 @@
                         <li><a href="#">Еще</a></li>
                     </ul>
 
-
                     <form action="#" method="POST">
                         <div class="filter-row">
 
@@ -242,16 +241,25 @@
 
                         <div class="card__row">
                             <div class="card__top">
-                                <div class="card__logo"
-                                     style="background-image: url('${require(`./assets/img/ruki-iz-plech.png`)}');"></div>
-                                <div class="card__name-block">
-                                    <a href="#" class="card__name">Руки из плеч</a>
-                                    <div class="card__tagline">Все ремонтируют здесь!</div>
-                                    <div class="card__rating">
-                                        <span class="card__rate">4.91</span>
-                                        <span class="card__count-reviews">– 277 оценок и отзывов</span>
+                                <div class="card__header">
+                                    <div class="card__logo"
+                                         style="background-image: url('${require(`./assets/img/ruki-iz-plech.png`)}');"></div>
+                                    <div class="card__name-block">
+                                        <a href="#" class="card__name">Руки из плеч</a>
+                                        <div class="card__tagline">Все ремонтируют здесь!</div>
+
+                                        <div class="card__rating">
+                                            <span class="card__rate">4.91</span>
+                                            <span class="card__count-reviews">– 277 оценок и отзывов</span>
+                                        </div>
                                     </div>
                                 </div>
+
+                                <div class="card__rating card__rating--mobile">
+                                    <span class="card__rate">4.91</span>
+                                    <span class="card__count-reviews">– 277 оценок и отзывов</span>
+                                </div>
+
                                 <div class="card__contacts">
                                     <a href="tel:+74952412256" class="card__tel">8 (495) 241-22-56</a>
                                     <div class="card__work-time">Пн-Пт 9:00-18:00</div>
@@ -345,7 +353,8 @@
 
                             <div class="card__review-item">
                                 <div class="card__review-text">
-                                    <div class="card__review-avatar" style="background-image: url(${require(`./assets/img/avatar.svg`)});"></div>
+                                    <div class="card__review-avatar"
+                                         style="background-image: url(${require(`./assets/img/avatar.svg`)});"></div>
                                     <div class="card__review-name">Виталий оценил(а) на 5 звезд</div>
 
                                     <div class="card__stars card__stars--5">
@@ -357,21 +366,110 @@
                                     </div>
                                 </div>
 
-                                <p>Обратился с ремонтом кофемашины, до этого была в другом срвисе, где не смогли сделать. Спасибо за честную работу</p>
+                                <p>Обратился с ремонтом кофемашины, до этого была в другом срвисе, где не смогли
+                                    сделать. Спасибо за честную работу</p>
                             </div>
 
-
+                            <a href="#" class="card__review-all card__review-all--mobile">Смотреть все отзывы</a>
                         </div>
-
-
-
-
-
-
 
 
                     </div>
 
+                    <ul class="pagination">
+                        <li class="pagination__prev"><a href="#"></a></li>
+                        <li><a href="#" class="active">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li class="pagination__next"><a href="#"></a></li>
+                    </ul>
+
+                    <div class="master-call">
+
+                        <form action="">
+                            <h2>Вызов мастера для ремонта стиральной машины</h2>
+                            <textarea placeholder="Опишите поломку или задайте вопрос"></textarea>
+                            <input type="text" placeholder="Ваше имя">
+                            <input type="tel" placeholder="+7 (">
+                            <input type="submit" value="Отправить">
+                        </form>
+
+                        <div class="master-call__img"></div>
+                    </div>
+
+                    <div class="base__map" id="map"></div>
+
+                    <div class="average-prices">
+                        <h2>Средние цены на ремонт стиральных машин в Москве</h2>
+                        <div data-scroll>
+                            <ul>
+                                <li><a href="#">Замена подшипника <strong>от 3 800 до 6 800 руб.</strong></a></li>
+                                <li><a href="#">Замена стекла <strong>от 900 до 1 400 руб.</strong></a></li>
+                                <li><a href="#">Замена УБЛ <strong>от 900 до 1 500 руб.</strong></a></li>
+                                <li><a href="#">Замена щеток <strong>от 1 200 до 2 400 руб.</strong></a></li>
+                                <li><a href="#">Ремонт электроники <strong>от 2 800 до 7 700 руб.</strong></a></li>
+                                <li><a href="#">Чистка сливного насоса <strong>от 800 до 1 200 руб.</strong></a></li>
+                                <li><a href="#">Замена конденсатора <strong>от 800 до 1 100 руб.</strong></a></li>
+                                <li><a href="">Вскрытие дверцы <strong>от 800 до 1 200 руб.</strong></a></li>
+                                <li><a href="#">Ремонт дозатора <strong>от 800 до 1 300 руб.</strong></a></li>
+                                <li><a href="#">Замена датчика уровня воды <strong>от 800 до 1 200 руб.</strong></a>
+                                </li>
+                                <li><a href="#">Замена сальника <strong>от 1 100 до 1 900 руб.</strong></a></li>
+
+                                <li><a href="#">Замена подшипника <strong>от 3 800 до 6 800 руб.</strong></a></li>
+                                <li><a href="#">Замена стекла <strong>от 900 до 1 400 руб.</strong></a></li>
+                                <li><a href="#">Замена УБЛ <strong>от 900 до 1 500 руб.</strong></a></li>
+                                <li><a href="#">Замена щеток <strong>от 1 200 до 2 400 руб.</strong></a></li>
+                                <li><a href="#">Ремонт электроники <strong>от 2 800 до 7 700 руб.</strong></a></li>
+                                <li><a href="#">Чистка сливного насоса <strong>от 800 до 1 200 руб.</strong></a></li>
+                                <li><a href="#">Замена конденсатора <strong>от 800 до 1 100 руб.</strong></a></li>
+                                <li><a href="">Вскрытие дверцы <strong>от 800 до 1 200 руб.</strong></a></li>
+                                <li><a href="#">Ремонт дозатора <strong>от 800 до 1 300 руб.</strong></a></li>
+                                <li><a href="#">Замена датчика уровня воды <strong>от 800 до 1 200 руб.</strong></a>
+                                </li>
+                                <li><a href="#">Замена сальника <strong>от 1 100 до 1 900 руб.</strong></a></li>
+
+                                <li><a href="#">Замена подшипника <strong>от 3 800 до 6 800 руб.</strong></a></li>
+                                <li><a href="#">Замена стекла <strong>от 900 до 1 400 руб.</strong></a></li>
+                                <li><a href="#">Замена УБЛ <strong>от 900 до 1 500 руб.</strong></a></li>
+                                <li><a href="#">Замена щеток <strong>от 1 200 до 2 400 руб.</strong></a></li>
+                                <li><a href="#">Ремонт электроники <strong>от 2 800 до 7 700 руб.</strong></a></li>
+                                <li><a href="#">Чистка сливного насоса <strong>от 800 до 1 200 руб.</strong></a></li>
+                                <li><a href="#">Замена конденсатора <strong>от 800 до 1 100 руб.</strong></a></li>
+                                <li><a href="">Вскрытие дверцы <strong>от 800 до 1 200 руб.</strong></a></li>
+                                <li><a href="#">Ремонт дозатора <strong>от 800 до 1 300 руб.</strong></a></li>
+                                <li><a href="#">Замена датчика уровня воды <strong>от 800 до 1 200 руб.</strong></a>
+                                </li>
+                                <li><a href="#">Замена сальника <strong>от 1 100 до 1 900 руб.</strong></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="what-repaired">
+                        <h2>Что еще можно отремонтировать</h2>
+
+                        <ul>
+                            <li><a href="#">Indesit</a></li>
+                            <li><a href="#">Замена манжеты люка</a></li>
+                            <li><a href="#">Замена церкуляционного насоса</a></li>
+                            <li><a href="#">Замена заливного шланга</a></li>
+                            <li><a href="#">Замена приводного ремня</a></li>
+                            <li><a href="#">Чистка сливного фильтра</a></li>
+                            <li><a href="#">Замена люка</a></li>
+                            <li><a href="#">Замена сливного насоса</a></li>
+                            <li><a href="#">Замена шкава барабана</a></li>
+                        </ul>
+
+                        <div class="d-more">
+                            <a href="#" class="flex">
+                                <span>Показать все</span>
+                                <i></i>
+                            </a>
+                        </div>
+
+                    </div>
 
                 </div>
 
@@ -380,39 +478,26 @@
                         <h3>Средние цены в Москве</h3>
                         <ul class="aside__price-list">
                             <li>
-                                <a href="#">
-                                    Замена подшипника в стиральной машине <strong>от 3800 до 6 800 pyб.</strong>
-                                </a>
+                                <a href="#">Замена подшипника в стиральной машине <strong>от 3800 до 6 800 pyб.</strong></a>
                             </li>
                             <li>
-                                <a href="#">
-                                    Замена уплотнителя (манжеты) <strong>от 1100 до 1 700 pyб.</strong>
-                                </a>
+                                <a href="#">Замена уплотнителя (манжеты) <strong>от 1100 до 1 700 pyб.</strong></a>
                             </li>
                             <li>
-                                <a href="#">
-                                    Замена ТЭНа стиральной машины <strong>от 1300 до 3 000 pyб.</strong>
-                                </a>
+                                <a href="#">Замена ТЭНа стиральной машины <strong>от 1300 до 3 000 pyб.</strong></a>
                             </li>
                             <li>
-                                <a href="#">
-                                    Замена стекла <strong>от 900 до 1 400 pyб.</strong>
-                                </a>
+                                <a href="#">Замена стекла <strong>от 900 до 1 400 pyб.</strong></a>
                             </li>
                             <li>
-                                <a href="#">
-                                    Замена насоса (помпы) стиральной машины <strong>от 2300 до 4300 pyб.</strong>
-                                </a>
+                                <a href="#">Замена насоса (помпы) стиральной машины <strong>от 2300 до 4300
+                                    pyб.</strong></a>
                             </li>
                             <li>
-                                <a href="#">
-                                    Замена электронного модуля <strong>от 2800 до 9 400 pyб.</strong>
-                                </a>
+                                <a href="#">Замена электронного модуля <strong>от 2800 до 9 400 pyб.</strong></a>
                             </li>
                             <li>
-                                <a href="#">
-                                    Замена УБЛ <strong>от 900 до 1 500 pyб.</strong>
-                                </a>
+                                <a href="#">Замена УБЛ <strong>от 900 до 1 500 pyб.</strong></a>
                             </li>
                         </ul>
 
@@ -499,6 +584,12 @@
 
 </div>
 
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+<script>
+
+
+</script>
 
 </body>
 </html>

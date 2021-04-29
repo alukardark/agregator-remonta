@@ -9,6 +9,7 @@
 
 .base {
   max-width: 750px;
+  padding-bottom: 85px;
   &__brands {
     margin-bottom: 30px;
     li {
@@ -71,5 +72,46 @@
     font-size: 15px;
     line-height: 170.7%;
     color: rgba(40, 59, 80, 0.58);
+  }
+
+  &__map{
+    width: 100%;
+    height: 240px;
+    .ymaps-2-1-78-copyrights-pane{
+      display: none;
+    }
+  }
+}
+
+@media (max-width: $xl) {
+  .container.case {
+    max-width: 780px;
+  }
+  .base{
+    width: 100%;
+    max-width: 100%;
+  }
+}
+@media (max-width: $lg) {
+  .container.case {
+    .breadcrumbs {
+      margin: 22px 0 30px;
+    }
+  }
+
+  .base{
+    padding-bottom: 30px;
+    &__brands{
+      margin-bottom: 22px;
+      li{
+        margin-right: 5px;
+        margin-bottom: 5px;
+      }
+      a{
+        font-size: 14px;
+        height: 31px;
+        padding: 0 15px;
+      }
+    }
   }
 }

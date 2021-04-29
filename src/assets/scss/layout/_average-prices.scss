@@ -1,0 +1,62 @@
+.average-prices {
+  margin-top: 44px;
+  margin-bottom: 45px;
+  background: #FFFFFF;
+  border-radius: 4px;
+  padding: 40px 15px 40px 40px;
+  h2 {
+    font-weight: normal;
+    font-size: 30px;
+    color: #195DF6;
+    max-width: 500px;
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 695px;
+    & > li {
+      margin-bottom: 18px;
+      position: relative;
+      padding-left: 20px;
+      font-weight: 300;
+      font-size: 17px;
+      line-height: 132.2%;
+      color: #283B50;
+      //width: 32%;
+      width: 200px;
+      strong {
+        font-weight: 500;
+        display: block;
+      }
+      &:before {
+        content: '';
+        background: #195DF6;
+        width: 10px;
+        height: 2px;
+        position: absolute;
+        top: 10px;
+        left: 0;
+      }
+      a:hover {
+        color: #283B50;
+        strong {
+          font-weight: 500;
+        }
+        &:hover {
+          color: #195DF6;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $lg) {
+  .average-prices {
+    padding: 40px 25px 40px 25px;
+    h2 {
+      font-size: 26px;
+      margin-bottom: 40px;
+    }
+  }
+}

@@ -1,21 +1,23 @@
 import sass from '../scss/main.scss';
 import Choices from 'choices.js';
 import MicroModal from 'micromodal';
+import Inputmask from "inputmask";
 import SimpleBar from 'simplebar';
-import Swiper from "swiper";
+// import Swiper from "swiper";
 import 'lightgallery.js';
+import './map.js';
 
-window.onload = function () {
-    let widthts = screen.width;
-    if (widthts < 992) {
-        var test = document.querySelectorAll('.home-brand__item');
-        var test2 = document.querySelector('.home-brand__list--mob');
-        let i;
-        for (i = 0; i < test.length; ++i) {
-            test2.appendChild(test[i]);
-        }
-    }
-};
+// window.onload = function () {
+//     let widthts = screen.width;
+//     if (widthts < 992) {
+//         var test = document.querySelectorAll('.home-brand__item');
+//         var test2 = document.querySelector('.home-brand__list--mob');
+//         let i;
+//         for (i = 0; i < test.length; ++i) {
+//             test2.appendChild(test[i]);
+//         }
+//     }
+// };
 
 
 var btnMenuMobile = document.querySelector(".header-city");
@@ -52,6 +54,13 @@ if (document.querySelector('.js-choice') !== null) {
     });
 }
 
+document.querySelectorAll('[data-scroll]').forEach((el) => {
+    console.log(el);
+    new SimpleBar(el, {
+        autoHide: false
+    });
+});
+
 
 MicroModal.init({
     openTrigger: 'data-custom-open',
@@ -82,6 +91,15 @@ window.addEventListener('click', function (event) {
 document.querySelectorAll('.lightgallery').forEach((el) => {
     lightGallery(el);
 });
+
+document.querySelectorAll('input[type="tel"]').forEach(el => {
+    Inputmask({
+        "mask": "+7 (999) 999 9999",
+        "clearIncomplete": false,
+        "placeholder": ""
+    }).mask(el);
+});
+
 
 
 

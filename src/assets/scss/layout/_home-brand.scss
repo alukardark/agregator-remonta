@@ -15,15 +15,27 @@
     margin-top: 74px;
   }
 }
+
 .home-brand__item {
   margin-bottom: 50px;
   display: flex;
-
-
+  width: 16.6%;
+  justify-content: center;
+  &--hidden{
+    height: 0!important;
+    margin: 0!important;
+    padding: 0!important;
+  }
+  img {
+    -webkit-transition: filter .2s ease-in-out;
+    -o-transition: .2s ease-in-out filter;
+    transition: filter .2s ease-in-out;
+  }
   a {
     align-self: center;
   }
   a:hover img {
+    -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
   }
 }
@@ -42,6 +54,7 @@
     padding-right: 15px;
   }
 }
+
 @media (max-width: 991px) {
   .home-brand {
     margin-top: 86px;

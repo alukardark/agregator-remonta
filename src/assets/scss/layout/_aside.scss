@@ -19,7 +19,14 @@
     li {
       margin-bottom: 18px;
       position: relative;
-      padding-left: 25px;
+      padding-left: 20px;
+      font-weight: 300;
+      font-size: 17px;
+      line-height: 132.2%;
+      color: #283B50;
+      strong {
+        font-weight: 500;
+      }
       &:before {
         content: '';
         background: #195DF6;
@@ -31,14 +38,11 @@
       }
     }
     a {
-      font-weight: 300;
-      font-size: 17px;
-      line-height: 132.2%;
       color: #283B50;
       strong {
         font-weight: 500;
       }
-      &:hover{
+      &:hover {
         color: #195DF6;
       }
     }
@@ -70,7 +74,7 @@
       color: #195DF6;
       display: inline-block;
       margin-bottom: 25px;
-      &:hover{
+      &:hover {
         opacity: .7;
       }
     }
@@ -83,7 +87,7 @@
       margin: 0;
     }
   }
-  &__consultation__info{
+  &__consultation__info {
     padding: 30px 35px 40px;
   }
   &__consultation-img {
@@ -92,3 +96,10 @@
     background: url(../img/consultation.jpg) center/cover no-repeat;
   }
 }
+
+@media (max-width: $xl) {
+  .aside {
+    display: none;
+  }
+}
+
