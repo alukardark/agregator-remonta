@@ -1,0 +1,75 @@
+.container.case {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .breadcrumbs {
+    margin: 42px 0;
+  }
+}
+
+.base {
+  max-width: 750px;
+  &__brands {
+    margin-bottom: 30px;
+    li {
+      display: inline-block;
+      margin-right: 13px;
+      margin-bottom: 11px;
+      &:last-of-type {
+        margin-right: 0;
+        a {
+          background: #D8E2EA;
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+    }
+    a {
+      font-weight: normal;
+      font-size: 16px;
+      text-align: center;
+      color: #283B50;
+      background: #E9F0F6;
+      border-radius: 5px;
+      height: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 27px;
+      &:hover {
+        background: #D8E2EA;
+      }
+    }
+  }
+  &__show-map {
+    width: 100%;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/show-map.jpg) center/cover no-repeat;
+    margin: 18px 0 33px;
+    a {
+      font-weight: normal;
+      font-size: 16px;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 203px;
+      height: 38px;
+      background: #195DF6;
+      border-radius: 5px;
+      &:hover {
+        background: #FA8F43;
+      }
+    }
+  }
+  &__services-found {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 170.7%;
+    color: rgba(40, 59, 80, 0.58);
+  }
+}

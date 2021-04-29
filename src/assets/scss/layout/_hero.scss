@@ -6,6 +6,7 @@
   }
   .container {
     position: relative;
+    height: 100%;
   }
   &__content {
     position: absolute;
@@ -18,6 +19,43 @@
     height: 516px;
     background: url("../img/home.jpg") top center no-repeat;
     background-size: cover;
+  }
+
+  &--bg-listing{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../img/hero-listing.jpg);
+    height: 516px;
+    //padding-top: 100px;
+  }
+  &__cont{
+    height: 100%;
+    max-width: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1{
+      font-weight: bold;
+      font-size: 60px;
+      line-height: 1.17;
+      color: #FFFFFF;
+    }
+  }
+  &__desc{
+    font-size: 24px;
+    line-height: 139.7%;
+    color: #FFFFFF;
+    font-weight: 300;
+    a{
+      color: #FA8F43;
+      border-bottom: dashed  #FA8F43 1px;
+      font-weight: 500;
+      &:hover{
+        border-bottom-color: transparent;
+        color: #ea761e;
+      }
+    }
   }
 }
 .hero__content {
@@ -59,12 +97,14 @@
   }
   .d-input {
     padding-right: 40px;
+    font-weight: 300;
   }
   &-btn {
     margin-left: auto;
   }
   .btn--1 {
     width: 195px;
+    transition: .2s ease-in-out background;
   }
 }
 
@@ -83,6 +123,22 @@
     font-size: 36px;
     line-height: 42px;
   }
+  .hero {
+    &--bg-listing{
+      height: 400px;
+      text-align: center;
+    }
+    &__desc{
+      font-size: 16px;
+    }
+    &__cont{
+      h1{
+        font-size: 36px;
+        line-height: 1.17;
+      }
+    }
+  }
+
 }
 @media (max-width: 767px) {
   .hero__form {
@@ -104,4 +160,7 @@
   .header-city {
     font-size: 18px;
   }
+
+
+
 }

@@ -1,0 +1,37 @@
+.simplebar-content {
+  padding-right: 23px !important;
+  padding-left: 10px !important;
+}
+
+.simplebar-track.simplebar-horizontal {
+  display: none;
+}
+//
+.simplebar-scrollbar {
+  width: 6px;
+  right: 3px;
+}
+//
+.simplebar-scrollbar:before {
+  background: #7e8182;
+}
+
+//.simplebar-track.simplebar-vertical {
+//  width: 12px;
+//  background: #cecece;
+//  cursor: pointer;
+//  border-radius: 0;
+//}
+
+.simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
+  opacity: 1;
+}
+
+.table .simplebar-scrollbar:before {
+  background: #7e8182;
+}
+
+.table .simplebar-track.simplebar-horizontal .simplebar-scrollbar:before {
+  //opacity: 1;
+  height: 6px;
+}

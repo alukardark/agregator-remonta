@@ -156,11 +156,14 @@ form :focus:-ms-input-placeholder{
   color: #001A34;
 }
 .d-more {
-
   a {
     font-size: 20px;
     color: #195DF6;
     justify-content: center;
+    font-weight: 300;
+    &:hover{
+      opacity: .7;
+    }
 
     i {
       background: url("../img/home-category/more.svg") no-repeat;
@@ -173,4 +176,16 @@ form :focus:-ms-input-placeholder{
       top: 2px;
     }
   }
+}
+
+.wrapper-content{
+  flex: 1 0 auto;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.blue-bg{
+  background: #F5F8FB;
 }

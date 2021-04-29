@@ -4,9 +4,25 @@
 @import
 'abstracts/variables';
 
+@import 'functions/svg';
+
 // 2. Vendors
 @import
-"~normalize.scss/normalize";
+"~normalize.scss/normalize",
+"~swiper/dist/css/swiper",
+//"~lightgallery.js/dist/css/lightgallery",
+//"vendors/lightgallery",
+//"~badger-accordion/dist/badger-accordion.scss",
+//"vendors/badger-accordion.scss",
+//"~simplebar/dist/simplebar",
+//"vendors/simplebar",
+"~choices.js/public/assets/styles/choices",
+"vendors/choices",
+"vendors/modal",
+"~simplebar/dist/simplebar",
+"vendors/simplebar",
+"~lightgallery.js/dist/css/lightgallery",
+"vendors/lightgallery";
 
 // 3. Base stuff
 @import
@@ -22,14 +38,16 @@
 'layout/home-count',
 'layout/home-uslugi',
 'layout/home-legal',
-'layout/footer';
+'layout/footer',
+'layout/aside',
+'layout/base',
+'layout/card';
 
 // 5. Components
 @import
 'components/logo',
-'components/btn';
+'components/btn',
+'components/breadcrumbs',
+'components/filter';
 
-// 6. Pages
 
-
-// 7. Themes
