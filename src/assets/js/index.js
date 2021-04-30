@@ -3,32 +3,13 @@ import Choices from 'choices.js';
 import MicroModal from 'micromodal';
 import Inputmask from "inputmask";
 import SimpleBar from 'simplebar';
+import Swiper from "swiper";
+
 import 'lightgallery.js';
 import './map.js';
+import './tabList.js';
+import './dropDownCity.js';
 
-// window.onload = function () {
-//     let widthts = screen.width;
-//     if (widthts < 992) {
-//         var test = document.querySelectorAll('.home-brand__item');
-//         var test2 = document.querySelector('.home-brand__list--mob');
-//         let i;
-//         for (i = 0; i < test.length; ++i) {
-//             test2.appendChild(test[i]);
-//         }
-//     }
-// };
-
-
-var btnMenuMobile = document.querySelector(".header-city");
-var menuMobile = document.querySelector(".header-city ul");
-
-window.addEventListener('click', function (event) {
-    if (btnMenuMobile.contains(event.target) && !menuMobile.contains(event.target)) {
-        menuMobile.classList.toggle("active");
-    } else if (menuMobile.classList.contains('active') && !menuMobile.contains(event.target)) {
-        menuMobile.classList.remove("active");
-    }
-});
 
 
 if (document.querySelector('.js-choice') !== null) {
@@ -38,7 +19,6 @@ if (document.querySelector('.js-choice') !== null) {
         searchEnabled: false,
         shouldSort: false
     });
-
 
     document.querySelectorAll('.js-choice').forEach((el) => {
         el.addEventListener(
@@ -54,7 +34,6 @@ if (document.querySelector('.js-choice') !== null) {
 }
 
 document.querySelectorAll('[data-scroll]').forEach((el) => {
-    console.log(el);
     new SimpleBar(el, {
         autoHide: false
     });
@@ -69,7 +48,6 @@ MicroModal.init({
 });
 
 
-
 var filterButtons = document.querySelectorAll(".filter__btn");
 var filterDropdown = '';
 
@@ -80,7 +58,7 @@ window.addEventListener('click', function (event) {
 
         if (button.contains(event.target)) {
             filterDropdown.classList.toggle('active');
-        }else if(!filterDropdown.contains(event.target)){
+        } else if (!filterDropdown.contains(event.target)) {
             filterDropdown.classList.remove('active');
         }
     }
@@ -116,3 +94,8 @@ for (let anchor of anchors) {
 }
 
 
+new Swiper('.company__more-services .swiper-container', {
+    resistanceRatio : .45,
+    slidesPerView: 'auto',
+    freeMode: true,
+});

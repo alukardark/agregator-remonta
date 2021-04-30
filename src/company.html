@@ -43,7 +43,8 @@
 
                     <div class="company__sticky">
                         <div class="company__top">
-                            <div class="company__logo" style="background-image: url('${require(`./assets/img/ruki-iz-plech-logo.png`)}');"></div>
+                            <div class="company__logo"
+                                 style="background-image: url('${require(`./assets/img/ruki-iz-plech-logo.png`)}');"></div>
 
                             <div class="company__btns-wrap">
                                 <a href="tel:+7 (495) 241-22-56" class="company__tel">+7 (495) 241-22-56</a>
@@ -55,7 +56,7 @@
                             <li><a href="#about">О компании</a></li>
                             <li><a href="#addresses">Адреса</a></li>
                             <li><a href="#reviews">Отзывы и рейтинг</a></li>
-                            <li><a href="#repairing">Отзывы и рейтинг</a></li>
+                            <li><a href="#repairing">Что ремонтирует</a></li>
                             <li><a href="#rates">Цены</a></li>
                             <li><a href="#additional-services">Доп.услуги</a></li>
                             <li><a href="#photos">Фотографии</a></li>
@@ -151,7 +152,6 @@
                             <div class="company__addresses-text">
                                 <h3>Адреса <span>(2)</span></h3>
 
-
                                 <ul class="card__addresses">
                                     <li class="card__address">
                                         <div class="card__address-box">
@@ -161,7 +161,10 @@
                                             <div class="card__address-work-time">Сегодня работает до 21:00</div>
                                         </div>
                                         <div class="card__address-text">
-                                            Выходите из метро, идите во двор со шлагбаумом. Заходите во внутренний двор и поворачивайте налево, потом направо. Идите по двору прямо вдоль зеленого забора, потом поворачиваете направо. Идите прямо к двухэтажному зданию, и вы у цели
+                                            Выходите из метро, идите во двор со шлагбаумом. Заходите во внутренний двор
+                                            и поворачивайте налево, потом направо. Идите по двору прямо вдоль зеленого
+                                            забора, потом поворачиваете направо. Идите прямо к двухэтажному зданию, и вы
+                                            у цели
                                         </div>
                                         <div class="card__btns">
                                             <a href="#" class="card__route">Маршрут</a>
@@ -170,7 +173,8 @@
                                     </li>
                                     <li class="card__address">
                                         <div class="card__address-box">
-                                            <div class="card__metro"><i style="background-color: #D93821;"></i>Зорге</div>
+                                            <div class="card__metro"><i style="background-color: #D93821;"></i>Зорге
+                                            </div>
                                             <div class="card__street">ул. Маршала Бирюзова, д.1</div>
                                             <div class="card__address-work-time">Сегодня работает до 21:00</div>
                                         </div>
@@ -187,15 +191,565 @@
                                         <i></i>
                                     </a>
                                 </div>
-
-
                             </div>
                             <div class="company__addresses-map" id="map"></div>
+                        </div>
+
+                        <div id="reviews" class="company__reviews">
+                            <div class="company__row">
+                                <div class="card__review-top">
+                                    <div class="">
+                                        <h3>Рейтинг сервисного центра</h3>
+                                        <div class="card__rating">
+                                            <span class="card__rate">4.91</span>
+                                            <span class="card__count-reviews">– 277 оценок и отзывов</span>
+                                        </div>
+                                    </div>
+
+                                    <ul class="card__attributes">
+                                        <li>Вежливость операторов — 4.03</li>
+                                        <li>Полнота карточки компании — 3.28</li>
+                                    </ul>
+                                </div>
+                                <div class="card__review-item">
+                                    <div class="card__review-text">
+                                        <div class="card__review-box">
+                                            <div class="card__review-avatar"
+                                                 style="background-image: url(../img/avatar.svg);"></div>
+                                            <div class="card__review-name">Виталий оценил(а) на 5 звезд</div>
+                                        </div>
+
+                                        <div class="card__stars card__stars--5">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+
+                                    <p>Обратился с ремонтом кофемашины, до этого была в другом срвисе, где не смогли
+                                        сделать. Спасибо за честную работу!</p>
+                                </div>
+                                <div class="card__review-item">
+                                    <div class="card__review-text">
+                                        <div class="card__review-box">
+                                            <div class="card__review-avatar"
+                                                 style="background-image: url(../img/avatar.svg);"></div>
+                                            <div class="card__review-name">Наталья Викторовна оценил(а) на 5 звезд</div>
+                                        </div>
+
+                                        <div class="card__stars card__stars--5">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+
+                                    <p>Спасибо за то, что есть такие славные ребята! Знакомые хором твердили, что
+                                        нечего и ремонтировать старую стиральную машину, ну и что что старая, зато
+                                        снова рабочая.</p>
+                                </div>
+                                <div class="card__review-item">
+
+                                    <div class="card__review-text">
+                                        <div class="card__review-box">
+                                            <div class="card__review-avatar"
+                                                 style="background-image: url(../img/avatar.svg);"></div>
+                                            <div class="card__review-name">Наталья оценил(а) на 5 звезд</div>
+                                        </div>
+
+                                        <div class="card__stars card__stars--5">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+
+                                    <p>Сломалась стиральная машинка. Сделали всё быстро и качественно!!! Огромное
+                                        спасибо!!!</p>
+                                </div>
+                                <a href="#" class="card__review-all">Смотреть все отзывы</a>
+                            </div>
 
 
+                            <form action="#" class="company__feedback">
+                                <h3>
+                                    Оставьте свой отзыв о сервисном центре «Руки из плеч» нам важне ваше мнение для
+                                    составления лучшего предложения
+                                </h3>
+
+                                <div class="company__rating-row">
+                                    <h4>Оцените сервисный центр</h4>
+                                    <div class="rating">
+                                        <label>
+                                            <input type="radio" name="stars" value="1">
+                                            <span class="icon"></span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="stars" value="2"/>
+                                            <span class="icon"></span>
+                                            <span class="icon"></span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="stars" value="3"/>
+                                            <span class="icon"></span>
+                                            <span class="icon"></span>
+                                            <span class="icon"></span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="stars" value="4"/>
+                                            <span class="icon"></span>
+                                            <span class="icon"></span>
+                                            <span class="icon"></span>
+                                            <span class="icon"></span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="stars" value="5"/>
+                                            <span class="icon"></span>
+                                            <span class="icon"></span>
+                                            <span class="icon"></span>
+                                            <span class="icon"></span>
+                                            <span class="icon"></span>
+                                        </label>
+                                    </div>
+                                    <p>нажмите, чтобы оценить</p>
+                                </div>
+
+
+                                <div class="company__rating-input-row">
+                                    <label for="feedback-name">Как вас зовут?</label>
+                                    <input type="text" placeholder="Ваше имя" id="feedback-name">
+                                </div>
+
+                                <div class="company__rating-textarea-row">
+                                    <label for="feedback-text">Ваш отзыв</label>
+                                    <textarea placeholder="Расскажите другим пользователям о ваших впечатлениях"
+                                              id="feedback-text"></textarea>
+                                </div>
+
+                                <input type="submit" value="Отправить">
+                            </form>
+                        </div>
+
+                        <div id="repairing" class="company__repairing">
+                            <h2>Ремонтируемая техника</h2>
+                            <div data-scroll>
+                                <ul>
+                                    <li>
+                                        <a href="#">Крупная бытовая техника</a>
+                                        <p>Ремонт посудомоечных машин, холодильников, стиральных машин, сушильных машин,
+                                            варочных панелей, духовых шкафов, плит</p>
+                                    </li>
+                                    <li>
+                                        <a href="#">Мелкая кухонная техника</a>
+                                        <p>Ремонт кофемашин, кофеварок</p>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">Швейное оборудование</a>
+                                        <p>Ремонт швейных машин, вышивальных машин, вязальных машин, оверлоков</p>
+                                    </li>
+                                    <li>
+                                        <a href="#">Офисная и оргтехника</a>
+                                        <p>Ремонт проекторов, копиров, сканеров, принтеров, МФУ</p>
+                                    </li>
+                                    <li>
+                                        <a href="#">Компьютерная техника</a>
+                                        <p>Ремонт моноблоков, компьютеров, ноутбуков, серверов</p>
+                                    </li>
+                                    <li>
+                                        <a href="#">Портативная техника</a>
+                                        <p>Ремонт планшетов, фитнес-трекеров (только Apple Watch)</p>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">Компьютерная периферия</a>
+                                        <p>Ремонт мониторов</p>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">Аудио и видеотехника</a>
+                                        <p>Ремонт телевизоров, домашних кинотеатров</p>
+                                    </li>
+                                    <li>
+                                        <a href="#">Компьютерные комплектующие</a>
+                                        <p>Ремонт блоков питания, видеокарт, звуковых карт, материнских плат, карт
+                                            памяти</p>
+                                    </li>
+                                    <li>
+                                        <a href="#">Мелкая бытовая техника</a>
+                                        <p>Ремонт пылесосов (только Bosch, Electrolux, LG, Philips)</p>
+                                    </li>
+                                    <li>
+                                        <a href="#">Климатическая техника</a>
+                                        <p>Ремонт кондиционеров, водонагревателей</p>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">Электротранспорт</a>
+                                        <p>Ремонт гироскутеров, электросамокатов</p>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">Телевизоры</a>
+                                        <p>Ремонт ЖК телевизоры</p>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">Принтеры, МФУ</a>
+                                        <p>Ремонт лазерных принтеров</p>
+                                    </li>
+                                    <li>
+                                        <a href="#">Плиты</a>
+                                        <p>Ремонт электроплит, индукционных плит, стеклокерамических плит</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="rates" class="company__rates">
+                            <h2>Цены на ремонт и обслуживание технике в сервисном центре «Руки из плеч»</h2>
+
+                            <div class="tabs-buttons">
+                                <div class="tab-button active" data-value="1">Холодильники</div>
+                                <div class="tab-button" data-value="2">Стиральны машины</div>
+                                <div class="tab-button" data-value="3">Посудомоечные машины</div>
+                                <div class="tab-button" data-value="4">Электроплиты</div>
+                                <div class="tab-button" data-value="5">Духовые шкафы</div>
+                            </div>
+
+                            <div class="tabs">
+                                <div class="tab tab--1 active">
+                                    <ul class="company__rates-list">
+                                        <li>Замена уплотнителя двери от <strong>350 pyб.</strong></li>
+                                        <li>Перевесить дверь от <strong>320 pyб.</strong></li>
+                                        <li>Ремонт компрессора <strong>от 690 pyб.</strong></li>
+                                        <li>Устранение утечки хладагента <strong>от 670 pyб.</strong></li>
+                                        <li>Ремонт испарителя <strong>от 280 pyб.</strong></li>
+                                        <li>Замена терморгулятора <strong>от 350 pyб.</strong></li>
+                                        <li>Заправка фреоном <strong>от 975 pyб.</strong></li>
+                                        <li>Ремонт электросхем <strong>от 975 pyб.</strong></li>
+                                        <li>Замена реле <strong>от 320 pyб.</strong></li>
+                                        <li>Замена термостата <strong>от 490 pyб.</strong></li>
+                                        <li>Замена предохранителя <strong>от 900 pyб.</strong></li>
+                                        <li>Замена таймера <strong>от 350 pyб.</strong></li>
+                                    </ul>
+                                </div>
+                                <div class="tab tab--2">
+                                    <ul class="company__rates-list">
+                                        <li>Замена термостата <strong>от 490 pyб.</strong></li>
+                                        <li>Замена предохранителя <strong>от 900 pyб.</strong></li>
+                                        <li>Замена таймера <strong>от 350 pyб.</strong></li>
+                                        <li>Устранение утечки хладагента <strong>от 670 pyб.</strong></li>
+                                        <li>Ремонт испарителя <strong>от 280 pyб.</strong></li>
+                                        <li>Замена терморгулятора <strong>от 350 pyб.</strong></li>
+                                        <li>Заправка фреоном <strong>от 975 pyб.</strong></li>
+                                        <li>Ремонт электросхем <strong>от 975 pyб.</strong></li>
+                                        <li>Замена реле <strong>от 320 pyб.</strong></li>
+                                        <li>Замена уплотнителя двери от <strong>350 pyб.</strong></li>
+                                        <li>Перевесить дверь от <strong>320 pyб.</strong></li>
+                                        <li>Ремонт компрессора <strong>от 690 pyб.</strong></li>
+                                    </ul>
+                                </div>
+                                <div class="tab tab--3">
+                                    <ul class="company__rates-list">
+                                        <li>Заправка фреоном <strong>от 975 pyб.</strong></li>
+                                        <li>Ремонт электросхем <strong>от 975 pyб.</strong></li>
+                                        <li>Замена реле <strong>от 320 pyб.</strong></li>
+                                        <li>Замена термостата <strong>от 490 pyб.</strong></li>
+                                        <li>Замена предохранителя <strong>от 900 pyб.</strong></li>
+                                        <li>Замена таймера <strong>от 350 pyб.</strong></li>
+                                        <li>Замена уплотнителя двери от <strong>350 pyб.</strong></li>
+                                        <li>Перевесить дверь от <strong>320 pyб.</strong></li>
+                                        <li>Ремонт компрессора <strong>от 690 pyб.</strong></li>
+                                        <li>Устранение утечки хладагента <strong>от 670 pyб.</strong></li>
+                                        <li>Ремонт испарителя <strong>от 280 pyб.</strong></li>
+                                        <li>Замена терморгулятора <strong>от 350 pyб.</strong></li>
+                                    </ul>
+                                </div>
+                                <div class="tab tab--3">
+                                    <ul class="company__rates-list">
+                                        <li>Заправка фреоном <strong>от 975 pyб.</strong></li>
+                                        <li>Ремонт электросхем <strong>от 975 pyб.</strong></li>
+                                        <li>Замена реле <strong>от 320 pyб.</strong></li>
+                                        <li>Замена термостата <strong>от 490 pyб.</strong></li>
+                                        <li>Перевесить дверь от <strong>320 pyб.</strong></li>
+                                        <li>Ремонт компрессора <strong>от 690 pyб.</strong></li>
+                                        <li>Устранение утечки хладагента <strong>от 670 pyб.</strong></li>
+                                        <li>Ремонт испарителя <strong>от 280 pyб.</strong></li>
+                                        <li>Замена терморгулятора <strong>от 350 pyб.</strong></li>
+                                    </ul>
+                                </div>
+                                <div class="tab tab--4">
+                                    <ul class="company__rates-list">
+                                        <li>Заправка фреоном <strong>от 975 pyб.</strong></li>
+                                        <li>Ремонт электросхем <strong>от 975 pyб.</strong></li>
+                                        <li>Замена реле <strong>от 320 pyб.</strong></li>
+                                        <li>Замена термостата <strong>от 490 pyб.</strong></li>
+                                        <li>Замена предохранителя <strong>от 900 pyб.</strong></li>
+                                        <li>Замена таймера <strong>от 350 pyб.</strong></li>
+                                    </ul>
+                                </div>
+                                <div class="tab tab--5">
+                                    <ul class="company__rates-list">
+                                        <li>Замена таймера <strong>от 350 pyб.</strong></li>
+                                        <li>Замена уплотнителя двери от <strong>350 pyб.</strong></li>
+                                        <li>Перевесить дверь от <strong>320 pyб.</strong></li>
+                                        <li>Ремонт компрессора <strong>от 690 pyб.</strong></li>
+                                        <li>Устранение утечки хладагента <strong>от 670 pyб.</strong></li>
+                                        <li>Ремонт испарителя <strong>от 280 pyб.</strong></li>
+                                        <li>Замена терморгулятора <strong>от 350 pyб.</strong></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="additional-services" class="company__rates">
+                            <h2>Дополнительные сервисные услуги</h2>
+
+                            <div class="tabs-buttons">
+                                <div class="tab-button active" data-value="1">Компьютерная помощь</div>
+                                <div class="tab-button" data-value="2">Восстановление даных</div>
+                                <div class="tab-button" data-value="3">IT-помощь организациям</div>
+                                <div class="tab-button" data-value="4">Ремонт для юр.лиц</div>
+                                <div class="tab-button" data-value="5">Подключение быт. техники</div>
+                            </div>
+
+                            <div class="tabs">
+                                <div class="tab tab--1 active">
+                                    <ul class="company__rates-list">
+                                        <li>Замена уплотнителя двери от <strong>350 pyб.</strong></li>
+                                        <li>Перевесить дверь от <strong>320 pyб.</strong></li>
+                                        <li>Ремонт компрессора <strong>от 690 pyб.</strong></li>
+                                        <li>Устранение утечки хладагента <strong>от 670 pyб.</strong></li>
+                                        <li>Ремонт испарителя <strong>от 280 pyб.</strong></li>
+                                        <li>Замена терморгулятора <strong>от 350 pyб.</strong></li>
+                                        <li>Заправка фреоном <strong>от 975 pyб.</strong></li>
+                                        <li>Ремонт электросхем <strong>от 975 pyб.</strong></li>
+                                        <li>Замена реле <strong>от 320 pyб.</strong></li>
+                                        <li>Замена термостата <strong>от 490 pyб.</strong></li>
+                                        <li>Замена предохранителя <strong>от 900 pyб.</strong></li>
+                                        <li>Замена таймера <strong>от 350 pyб.</strong></li>
+                                    </ul>
+                                </div>
+                                <div class="tab tab--2">
+                                    <ul class="company__rates-list">
+                                        <li>Замена термостата <strong>от 490 pyб.</strong></li>
+                                        <li>Замена предохранителя <strong>от 900 pyб.</strong></li>
+                                        <li>Замена таймера <strong>от 350 pyб.</strong></li>
+                                        <li>Устранение утечки хладагента <strong>от 670 pyб.</strong></li>
+                                        <li>Ремонт испарителя <strong>от 280 pyб.</strong></li>
+                                        <li>Замена терморгулятора <strong>от 350 pyб.</strong></li>
+                                        <li>Заправка фреоном <strong>от 975 pyб.</strong></li>
+                                        <li>Ремонт электросхем <strong>от 975 pyб.</strong></li>
+                                        <li>Замена реле <strong>от 320 pyб.</strong></li>
+                                        <li>Замена уплотнителя двери от <strong>350 pyб.</strong></li>
+                                        <li>Перевесить дверь от <strong>320 pyб.</strong></li>
+                                        <li>Ремонт компрессора <strong>от 690 pyб.</strong></li>
+                                    </ul>
+                                </div>
+                                <div class="tab tab--3">
+                                    <ul class="company__rates-list">
+                                        <li>Заправка фреоном <strong>от 975 pyб.</strong></li>
+                                        <li>Ремонт электросхем <strong>от 975 pyб.</strong></li>
+                                        <li>Замена реле <strong>от 320 pyб.</strong></li>
+                                        <li>Замена термостата <strong>от 490 pyб.</strong></li>
+                                        <li>Замена предохранителя <strong>от 900 pyб.</strong></li>
+                                        <li>Замена таймера <strong>от 350 pyб.</strong></li>
+                                        <li>Замена уплотнителя двери от <strong>350 pyб.</strong></li>
+                                        <li>Перевесить дверь от <strong>320 pyб.</strong></li>
+                                        <li>Ремонт компрессора <strong>от 690 pyб.</strong></li>
+                                        <li>Устранение утечки хладагента <strong>от 670 pyб.</strong></li>
+                                        <li>Ремонт испарителя <strong>от 280 pyб.</strong></li>
+                                        <li>Замена терморгулятора <strong>от 350 pyб.</strong></li>
+                                    </ul>
+                                </div>
+                                <div class="tab tab--3">
+                                    <ul class="company__rates-list">
+                                        <li>Заправка фреоном <strong>от 975 pyб.</strong></li>
+                                        <li>Ремонт электросхем <strong>от 975 pyб.</strong></li>
+                                        <li>Замена реле <strong>от 320 pyб.</strong></li>
+                                        <li>Замена термостата <strong>от 490 pyб.</strong></li>
+                                        <li>Перевесить дверь от <strong>320 pyб.</strong></li>
+                                        <li>Ремонт компрессора <strong>от 690 pyб.</strong></li>
+                                        <li>Устранение утечки хладагента <strong>от 670 pyб.</strong></li>
+                                        <li>Ремонт испарителя <strong>от 280 pyб.</strong></li>
+                                        <li>Замена терморгулятора <strong>от 350 pyб.</strong></li>
+                                    </ul>
+                                </div>
+                                <div class="tab tab--4">
+                                    <ul class="company__rates-list">
+                                        <li>Заправка фреоном <strong>от 975 pyб.</strong></li>
+                                        <li>Ремонт электросхем <strong>от 975 pyб.</strong></li>
+                                        <li>Замена реле <strong>от 320 pyб.</strong></li>
+                                        <li>Замена термостата <strong>от 490 pyб.</strong></li>
+                                        <li>Замена предохранителя <strong>от 900 pyб.</strong></li>
+                                        <li>Замена таймера <strong>от 350 pyб.</strong></li>
+                                    </ul>
+                                </div>
+                                <div class="tab tab--5">
+                                    <ul class="company__rates-list">
+                                        <li>Замена таймера <strong>от 350 pyб.</strong></li>
+                                        <li>Замена уплотнителя двери от <strong>350 pyб.</strong></li>
+                                        <li>Перевесить дверь от <strong>320 pyб.</strong></li>
+                                        <li>Ремонт компрессора <strong>от 690 pyб.</strong></li>
+                                        <li>Устранение утечки хладагента <strong>от 670 pyб.</strong></li>
+                                        <li>Ремонт испарителя <strong>от 280 pyб.</strong></li>
+                                        <li>Замена терморгулятора <strong>от 350 pyб.</strong></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="photos" class="company__photos">
+                            <h2>Фотографии</h2>
+                            <div class="company__photos-list lightgallery">
+                                <a href="${require(`./assets/img/gallery/gallery-1.jpg`)}"
+                                   style="background-image: url(${require(`./assets/img/gallery/gallery-1.jpg`)});"></a>
+                                <a href="${require(`./assets/img/gallery/gallery-2.jpg`)}"
+                                   style="background-image: url(${require(`./assets/img/gallery/gallery-2.jpg`)});"></a>
+                                <a href="${require(`./assets/img/gallery/gallery-3.jpg`)}"
+                                   style="background-image: url(${require(`./assets/img/gallery/gallery-3.jpg`)});"></a>
+                                <a href="${require(`./assets/img/gallery/gallery-4.jpg`)}"
+                                   style="background-image: url(${require(`./assets/img/gallery/gallery-4.jpg`)});"></a>
+                                <a href="${require(`./assets/img/gallery/gallery-5.jpg`)}"
+                                   style="background-image: url(${require(`./assets/img/gallery/gallery-5.jpg`)});"></a>
+                                <a href="${require(`./assets/img/gallery/gallery-6.jpg`)}"
+                                   style="background-image: url(${require(`./assets/img/gallery/gallery-6.jpg`)});"></a>
+                                <a href="${require(`./assets/img/gallery/gallery-1.jpg`)}"
+                                   style="background-image: url(${require(`./assets/img/gallery/gallery-1.jpg`)});"></a>
+
+                            </div>
 
                         </div>
+
+                        <div class="company__more-services">
+                            <h2>Еще сервисы в этом районе</h2>
+
+                            <div class="swiper-container">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <h5>БытТех Ремонт</h5>
+                                        <p>(Люблино)</p>
+                                        <div class="card__stars card__stars--5">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <a href="#">Подробнее</a>
+                                    </li>
+
+                                    <li class="swiper-slide">
+                                        <h5>Золотые руки</h5>
+                                        <p>(Люблино)</p>
+                                        <div class="card__stars card__stars--5">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <a href="#">Подробнее</a>
+                                    </li>
+
+                                    <li class="swiper-slide">
+                                        <h5>Элайт Сервис</h5>
+                                        <p>(Люблино)</p>
+                                        <div class="card__stars card__stars--5">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <a href="#">Подробнее</a>
+                                    </li>
+
+                                    <li class="swiper-slide">
+                                        <h5>Мастерская “Юго-Восток)</h5>
+                                        <p>(Люблино)</p>
+                                        <div class="card__stars card__stars--5">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <a href="#">Подробнее</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="company__more-services">
+                            <h2>Лучшие сервисы по мнению наших пользователей</h2>
+
+                            <div class="swiper-container">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <h5>БытТех Ремонт</h5>
+                                        <p>(Люблино)</p>
+                                        <div class="card__stars card__stars--5">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <a href="#">Подробнее</a>
+                                    </li>
+
+                                    <li class="swiper-slide">
+                                        <h5>Золотые руки</h5>
+                                        <p>(Люблино)</p>
+                                        <div class="card__stars card__stars--5">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <a href="#">Подробнее</a>
+                                    </li>
+
+                                    <li class="swiper-slide">
+                                        <h5>Элайт Сервис</h5>
+                                        <p>(Люблино)</p>
+                                        <div class="card__stars card__stars--5">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <a href="#">Подробнее</a>
+                                    </li>
+
+                                    <li class="swiper-slide">
+                                        <h5>Мастерская “Юго-Восток)</h5>
+                                        <p>(Люблино)</p>
+                                        <div class="card__stars card__stars--5">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <a href="#">Подробнее</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
+
+
                 </div>
             </div>
 

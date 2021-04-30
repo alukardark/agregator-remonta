@@ -272,20 +272,22 @@
     padding-top: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     a {
       display: block;
-      width: 90px;
+      //width: 90px;
+      width: 13%;
+      margin-right: 1.5%;
       height: 56px;
       border-radius: 4px;
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      margin-right: 9px;
+      //margin-right: 9px;
       margin-bottom: 10px;
-      &:last-of-type {
+      &:nth-of-type(7n){
         margin-right: 0;
       }
+
     }
 
   }
@@ -395,7 +397,7 @@
       background-size: contain;
       margin-right: 4px;
       @include bgsvg('<svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M8.04894 0.927049C8.3483 0.00573802 9.6517 0.00574017 9.95106 0.927051L11.2451 4.90983C11.379 5.32185 11.763 5.60081 12.1962 5.60081H16.3839C17.3527 5.60081 17.7554 6.84043 16.9717 7.40983L13.5838 9.87132C13.2333 10.126 13.0866 10.5773 13.2205 10.9894L14.5146 14.9721C14.8139 15.8934 13.7595 16.6596 12.9757 16.0902L9.58778 13.6287C9.2373 13.374 8.7627 13.374 8.41221 13.6287L5.02426 16.0902C4.24054 16.6596 3.18607 15.8934 3.48542 14.9721L4.7795 10.9894C4.91338 10.5773 4.76672 10.126 4.41623 9.87132L1.02827 7.40983C0.244561 6.84043 0.647338 5.60081 1.61606 5.60081H5.8038C6.23703 5.60081 6.62099 5.32185 6.75486 4.90983L8.04894 0.927049Z" fill="#E9F0F6"/>
+      <path d="M8.04894 0.927049C8.3483 0.00573802 9.6517 0.00574017 9.95106 0.927051L11.2451 4.90983C11.379 5.32185 11.763 5.60081 12.1962 5.60081H16.3839C17.3527 5.60081 17.7554 6.84043 16.9717 7.40983L13.5838 9.87132C13.2333 10.126 13.0866 10.5773 13.2205 10.9894L14.5146 14.9721C14.8139 15.8934 13.7595 16.6596 12.9757 16.0902L9.58778 13.6287C9.2373 13.374 8.7627 13.374 8.41221 13.6287L5.02426 16.0902C4.24054 16.6596 3.18607 15.8934 3.48542 14.9721L4.7795 10.9894C4.91338 10.5773 4.76672 10.126 4.41623 9.87132L1.02827 7.40983C0.244561 6.84043 0.647338 5.60081 1.61606 5.60081H5.8038C6.23703 5.60081 6.62099 5.32185 6.75486 4.90983L8.04894 0.927049Z" fill="#D3D7DC"/>
       </svg>'
       );
       &:last-of-type {
@@ -457,6 +459,7 @@
   &__review {
     padding-top: 15px;
   }
+
   &__review-top {
     display: flex;
     justify-content: space-between;
@@ -529,6 +532,10 @@
     color: rgba(40, 59, 80, 0.66);
     margin-right: 15px;
   }
+  &__review-box{
+    display: flex;
+    align-items: center;
+  }
 
   &__header {
     display: flex;
@@ -541,6 +548,7 @@
     margin: 12px 0 0;
 
   }
+
 }
 
 @media (max-width: $lg) {
@@ -638,12 +646,15 @@
     &__gallery {
       padding-top: 25px;
       justify-content: flex-start;
-      //a{
-      //
-      //  &:nth-of-type(1n + 7){
-      //    display: none;
-      //  }
-      //}
+      a{
+        width: 15.4%;
+        &:nth-of-type(6n){
+          margin-right: 0;
+        }
+        &:nth-of-type(7n){
+          margin-right: 1.5%;
+        }
+      }
     }
     &__prices {
       padding: 15px 0 25px;
@@ -694,6 +705,34 @@
   .card {
     &__address-work-time{
       width: 100%;
+    }
+
+    &__gallery {
+      a{
+        width: 23.8%;
+        margin-right: 1.5% !important;
+        &:nth-of-type(4n){
+          margin-right: 0 !important;
+        }
+
+      }
+    }
+  }
+}
+@media (max-width: $sm) {
+  .card {
+    &__gallery {
+      a{
+        width: 32%;
+        margin-right: 2% !important;
+        &:nth-of-type(4n){
+          margin-right: 2% !important;
+        }
+        &:nth-of-type(3n){
+          margin-right: 0 !important;
+        }
+
+      }
     }
   }
 }
