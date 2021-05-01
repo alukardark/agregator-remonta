@@ -3,8 +3,8 @@
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: flex-start;
-  .breadcrumbs {
-    margin: 42px 0;
+  .breadcrumbs-wrap {
+    padding: 42px 0;
   }
 }
 
@@ -75,10 +75,10 @@
     color: rgba(40, 59, 80, 0.58);
   }
 
-  &__map{
+  &__map {
     width: 100%;
     height: 240px;
-    .ymaps-2-1-78-copyrights-pane{
+    .ymaps-2-1-78-copyrights-pane {
       display: none;
     }
   }
@@ -88,27 +88,31 @@
   .container.case {
     max-width: 780px;
   }
-  .base{
+  .base {
     width: 100%;
     max-width: 100%;
   }
 }
+
 @media (max-width: $lg) {
   .container.case {
+    .breadcrumbs-wrap {
+      padding: 22px 0 30px;
+    }
     .breadcrumbs {
-      margin: 22px 0 30px;
+      margin-bottom: 0px;
     }
   }
 
-  .base{
+  .base {
     padding-bottom: 30px;
-    &__brands{
+    &__brands {
       margin-bottom: 22px;
-      li{
+      li {
         margin-right: 5px;
         margin-bottom: 5px;
       }
-      a{
+      a {
         font-size: 14px;
         height: 31px;
         padding: 0 15px;

@@ -9,7 +9,7 @@ const postcssImport = require('postcss-import');
 const isDevelopment = argv.mode === 'development';
 const isProduction = !isDevelopment;
 
-const htmlWebpackTemplates = ['index', 'listing', 'company'];
+const htmlWebpackTemplates = ['index', 'listing', 'company', 'types-equipment', 'brands', 'about'];
 
 let htmlWebpackPlugins = htmlWebpackTemplates.map(name => {
     return new HtmlWebpackPlugin({

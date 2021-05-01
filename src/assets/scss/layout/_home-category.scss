@@ -1,5 +1,6 @@
 .home-category {
   position: relative;
+  margin-bottom: 111px;
 
   &__list {
     margin-left: -15px;
@@ -25,6 +26,9 @@
   }
   &-img {
     width: 60px;
+    img{
+      max-width: 37px;
+    }
   }
   &-name {
     width: calc(100% - 60px);
@@ -88,6 +92,9 @@
   }
 }
 @media (max-width: 991px) {
+  .home-category {
+    margin-bottom: 86px;
+  }
   .home-category__item {
     width: 100%;
   }

@@ -22,7 +22,8 @@
 "~simplebar/dist/simplebar",
 "vendors/simplebar",
 "~lightgallery.js/dist/css/lightgallery",
-"vendors/lightgallery";
+"vendors/lightgallery",
+"vendors/flexmasonry";
 
 // 3. Base stuff
 @import
@@ -44,7 +45,10 @@
 'layout/card',
 'layout/what-repaired',
 'layout/average-prices',
-'layout/company';
+'layout/company',
+'layout/types-equipment',
+'layout/brands',
+'layout/about';
 
 // 5. Components
 @import
@@ -56,6 +60,7 @@
 'components/master-call',
 'components/rating',
 'components/company-banner',
-'components/tabs-buttons';
+'components/tabs-buttons',
+'components/search';
 
 

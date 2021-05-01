@@ -5,10 +5,12 @@ import Inputmask from "inputmask";
 import SimpleBar from 'simplebar';
 import Swiper from "swiper";
 
+import FlexMasonry from "./flexMasonry.js";
 import 'lightgallery.js';
 import './map.js';
 import './tabList.js';
 import './dropDownCity.js';
+
 
 
 
@@ -98,4 +100,15 @@ new Swiper('.company__more-services .swiper-container', {
     resistanceRatio : .45,
     slidesPerView: 'auto',
     freeMode: true,
+});
+
+
+FlexMasonry.init('.types-equipment__list', {
+    // responsive: true,
+    // responsive: false,
+    // numCols: 2,
+    breakpointCols : {
+        'min-width: 992px' : 2 ,
+        'min-width: 768px' : 1 ,
+    }
 });

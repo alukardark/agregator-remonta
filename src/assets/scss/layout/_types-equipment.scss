@@ -1,0 +1,124 @@
+.types-equipment {
+  padding-bottom: 100px;
+
+
+  h1 {
+    font-size: 50px;
+    margin: 0 0 1.2em 0;
+  }
+
+  &__list {
+    & > li {
+      &:nth-of-type(odd) {
+        .types-equipment__item {
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+  &__item {
+    background: #fff;
+    border-radius: 5px;
+    margin-bottom: 25px;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    min-height: 115px;
+    padding: 15px 40px;
+    border-bottom: 1px solid #E6EEF5;
+    img {
+      margin-right: 30px;
+    }
+    h2 {
+      margin: 0;
+      font-weight: normal;
+      font-size: 28px;
+      line-height: 96.7%;
+      color: #001A34;
+    }
+  }
+  &__repair-list {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 170.7%;
+    padding: 20px 40px 20px;
+    li {
+      margin-bottom: 5px;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+      a {
+        display: flex;
+        justify-content: space-between;
+        &:hover {
+          opacity: .7;
+        }
+      }
+    }
+    span {
+      color: #393939;
+      display: inline-block;
+      margin-right: 15px;
+    }
+    strong {
+      text-align: right;
+      color: #195DF6;
+      font-weight: 300;
+      white-space: nowrap;
+    }
+  }
+}
+
+@media (max-width: $lg) {
+  .types-equipment {
+    h1 {
+      font-size: 32px;
+    }
+    &__list {
+      & > li {
+        &:nth-of-type(odd) {
+          .types-equipment__item {
+            margin-right: 0;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+    &__row {
+      padding: 15px 20px;
+      img {
+        margin-right: 15px;
+      }
+    }
+    &__repair-list {
+      padding: 20px 20px 20px;
+    }
+
+  }
+}
+
+@media (max-width: $md) {
+  .types-equipment {
+    &__row {
+      h2 {
+        font-size: 24px;
+      }
+    }
+    &__repair-list {
+      font-size: 16px;
+    }
+  }
+}
+@media (max-width: $sm) {
+  .types-equipment {
+    padding-bottom: 50px;
+    &__list {
+      & > li {
+        width: calc(100% + 40px);
+        margin-left: -20px;
+      }
+    }
+  }
+}
