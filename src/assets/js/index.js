@@ -45,9 +45,12 @@ document.querySelectorAll('[data-scroll]').forEach((el) => {
 MicroModal.init({
     openTrigger: 'data-custom-open',
     disableScroll: true,
-    disableFocus: false,
+    disableFocus: true,
     awaitCloseAnimation: true,
 });
+
+document.querySelector(".click").click();
+
 
 
 var filterButtons = document.querySelectorAll(".filter__btn");

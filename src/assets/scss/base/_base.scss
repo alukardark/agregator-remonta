@@ -93,19 +93,19 @@ img::-moz-selection{
 }
 
 form ::-webkit-input-placeholder{
-  color: #393939;
+  color: rgba(40, 59, 80, 0.66);
   transition: opacity 0.3s ease;
 }
 form ::-moz-placeholder{
-  color: #393939;
+  color: rgba(40, 59, 80, 0.66);
   transition: opacity 0.3s ease;
 }
 form :-moz-placeholder{
-  color: #393939;
+  color: rgba(40, 59, 80, 0.66);
   transition: opacity 0.3s ease;
 }
 form :-ms-input-placeholder{
-  color: #393939;
+  color: rgba(40, 59, 80, 0.66);
   transition: opacity 0.3s ease;
 }
 
@@ -188,4 +188,17 @@ form :focus:-ms-input-placeholder{
 }
 .blue-bg{
   background: #F5F8FB;
+}
+.d-blue-bg{
+  background: #195DF6;
+}
+
+main.h-100{
+  height: calc(100% - 74px);
+}
+
+@media (max-width: $md) {
+  main.h-100{
+    height: calc(100% - 67px);
+  }
 }

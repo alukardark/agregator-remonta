@@ -817,5 +817,46 @@
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
 
+
+<div data-custom-open="profile" class="click">data-custom-open="profile"</div>
+
+<div class="modal micromodal-slide modal--profile" id="profile" data-micromodal-close>
+    <div class="modal__overlay">
+        <div class="modal__container ">
+
+            <h2>Заполните бриф</h2>
+
+            <div class="modal__desc">
+                Оставьте заявку, либо звоните, мы пообщаемся и сами все за вас заполним: <a
+                    href="tel:+74951504143">+7 495 150-41-43</a>
+            </div>
+
+            <form action="#" method="post" enctype="multipart/form-data" class="modal__form form-request">
+                <textarea placeholder="Опишите задачу" name="task"></textarea>
+
+                <div class="modal__file-upload">
+                    <label>
+                        <input type="file" name="file" id="uploaded-file">
+                        <span>Прикрепить файл</span>
+                    </label>
+                    <div id="file-name"></div>
+                </div>
+
+                <input type="text" name="budget" placeholder="Бюджет" class="modal__input-budget">
+                <input type="text" name="name" placeholder="Имя">
+                <input type="text" name="company" placeholder="Компания">
+                <input type="email" name="email" placeholder="E-mail">
+                <div class="modal__tel-wrap">
+                    <div>+7</div>
+                    <input required="" type="tel" name="phone" placeholder="(ХХХ) ХХХ ХХ ХХ">
+                </div>
+                <input type="submit" value="Отправить бриф">
+            </form>
+            <button class="modal__close" data-micromodal-close></button>
+        </div>
+    </div>
+</div>
+
+
 </body>
 </html>
