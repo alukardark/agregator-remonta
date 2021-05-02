@@ -6,7 +6,7 @@ class TabList {
         this.tabs = tabs;
 
         this.buttonsContainer.addEventListener('click', event => {
-            var index = event.target.closest('.tab-button').dataset.value;
+            let index = event.target.closest('.tab-button').dataset.value;
             this.openTab(index);
             getSiblings(event.target.closest('.tab-button')).forEach(function(e){
                 e.classList.remove('active');
@@ -21,10 +21,10 @@ class TabList {
     }
 }
 
-var buttonsContainer = document.querySelectorAll('.tabs-buttons'),
+let buttonsContainer = document.querySelectorAll('.tabs-buttons'),
     tabs = '';
 
-for (var buttonsContainerItem of buttonsContainer) {
+for (let buttonsContainerItem of buttonsContainer) {
     tabs = buttonsContainerItem.nextElementSibling;
     new TabList(buttonsContainerItem, tabs);
 }

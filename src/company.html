@@ -47,7 +47,7 @@
 
                             <div class="company__btns-wrap">
                                 <a href="tel:+7 (495) 241-22-56" class="company__tel">+7 (495) 241-22-56</a>
-                                <a href="#" class="company__master">Вызвать мастера</a>
+                                <a href="#" class="company__master" data-custom-open="master">Вызвать мастера</a>
                             </div>
                         </div>
 
@@ -89,7 +89,7 @@
                                         <div class="company__about-btns">
                                             <a href="tel:+7 (495) 241-22-56" class="company__tel">+7 (495) 241-22-56</a>
 
-                                            <a href="#" class="company__master">Вызвать мастера</a>
+                                            <a href="#" class="company__master" data-custom-open="master">Вызвать мастера</a>
                                         </div>
                                     </div>
                                 </div>
@@ -137,7 +137,7 @@
                                                     <span>сотрудников</span>
                                                 </li>
                                             </ul>
-                                            <a href="#" class="company__about-master">Вызвать мастера</a>
+                                            <a href="#" class="company__about-master" data-custom-open="master">Вызвать мастера</a>
                                         </div>
                                     </div>
 
@@ -286,29 +286,29 @@
                                     <h4>Оцените сервисный центр</h4>
                                     <div class="rating">
                                         <label>
-                                            <input type="radio" name="stars" value="1">
+                                            <input type="radio" name="region" name="stars" value="1">
                                             <span class="icon"></span>
                                         </label>
                                         <label>
-                                            <input type="radio" name="stars" value="2"/>
-                                            <span class="icon"></span>
-                                            <span class="icon"></span>
-                                        </label>
-                                        <label>
-                                            <input type="radio" name="stars" value="3"/>
-                                            <span class="icon"></span>
+                                            <input type="radio" name="region" name="stars" value="2"/>
                                             <span class="icon"></span>
                                             <span class="icon"></span>
                                         </label>
                                         <label>
-                                            <input type="radio" name="stars" value="4"/>
-                                            <span class="icon"></span>
+                                            <input type="radio" name="region" name="stars" value="3"/>
                                             <span class="icon"></span>
                                             <span class="icon"></span>
                                             <span class="icon"></span>
                                         </label>
                                         <label>
-                                            <input type="radio" name="stars" value="5"/>
+                                            <input type="radio" name="region" name="stars" value="4"/>
+                                            <span class="icon"></span>
+                                            <span class="icon"></span>
+                                            <span class="icon"></span>
+                                            <span class="icon"></span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="region" name="stars" value="5"/>
                                             <span class="icon"></span>
                                             <span class="icon"></span>
                                             <span class="icon"></span>
@@ -811,52 +811,129 @@
             </div>
         </div>
     </footer>
-
 </div>
 
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
 
-
-<div data-custom-open="profile" class="click">data-custom-open="profile"</div>
-
-<div class="modal micromodal-slide modal--profile" id="profile" data-micromodal-close>
-    <div class="modal__overlay">
+<div class="modal micromodal-slide modal--master" id="master" data-micromodal-close>
+    <div class="modal__overlay" data-micromodal-close>
         <div class="modal__container ">
+            <form action="#" method="post" class="">
+                <svg class="spinner" width="100px" height="100px" viewBox="0 0 66 66"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33"
+                            r="30"></circle>
+                </svg>
 
-            <h2>Заполните бриф</h2>
+                <div class="modal__step modal__step--1 hide">
+                    <h3>География обслуживания</h3>
+                    <div class="modal__select-title">Выберите станцию метро</div>
+                    <div class="modal__row">
+                        <select name="master-selection" class="js-choice">
+                            <option placeholder>Метро</option>
+                            <optgroup label="Арбатско-Покровская">
+                                <option>Арбатская</option>
+                                <option>Бауманская</option>
+                                <option>Волоколамская</option>
+                                <option>Измайловская</option>
+                                <option>Киевская</option>
+                                <option>Крылатское</option>
+                                <option>Кунцевская</option>
+                                <option>Курская</option>
+                                <option>Митино</option>
+                                <option>Молодёжная</option>
+                                <option>Мякинино</option>
+                                <option>Парк Победы</option>
+                                <option>Партизанская</option>
+                                <option>Первомайская</option>
+                                <option>Семёновская</option>
+                                <option>Славянский бульвар</option>
+                                <option>Смоленская</option>
+                                <option>Строгино</option>
+                                <option>Щёлковская</option>
+                                <option>Электрозаводская</option>
+                            </optgroup>
 
-            <div class="modal__desc">
-                Оставьте заявку, либо звоните, мы пообщаемся и сами все за вас заполним: <a
-                    href="tel:+74951504143">+7 495 150-41-43</a>
-            </div>
-
-            <form action="#" method="post" enctype="multipart/form-data" class="modal__form form-request">
-                <textarea placeholder="Опишите задачу" name="task"></textarea>
-
-                <div class="modal__file-upload">
-                    <label>
-                        <input type="file" name="file" id="uploaded-file">
-                        <span>Прикрепить файл</span>
-                    </label>
-                    <div id="file-name"></div>
+                            <optgroup label="Бутовская">
+                                <option>Арбатская</option>
+                                <option>Бауманская</option>
+                                <option>Волоколамская</option>
+                                <option>Измайловская</option>
+                                <option>Киевская</option>
+                                <option>Крылатское</option>
+                            </optgroup>
+                        </select>
+                        <a href="#" class="modal__step-btn modal__step-btn--next">Вызвать мастера</a>
+                    </div>
+                    <div class="modal__select-title">или областной округ</div>
+                    <ul class="region">
+                        <li>
+                            <input type="radio" name="region" id="region-1" value="ЦАО">
+                            <label for="region-1">ЦАО</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="region" id="region-2" value="САО">
+                            <label for="region-2">САО</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="region" id="region-3" value="СВАО">
+                            <label for="region-3">СВАО</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="region" id="region-4" value="ЮВАО">
+                            <label for="region-4">ЮВАО</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="region" id="region-5" value="ЮАО">
+                            <label for="region-5">ЮАО</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="region" id="region-6" value="ЮЗАО">
+                            <label for="region-6">ЮЗАО</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="region" id="region-7" value="ЗАО">
+                            <label for="region-7">ЗАО</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="region" id="region-8" value="СЗАО">
+                            <label for="region-8">СЗАО</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="region" id="region-9" value="Зеленоградский">
+                            <label for="region-9">Зеленоградский</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="region" id="region-10" value="Троицкий">
+                            <label for="region-10">Троицкий</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="region" id="region-11" value="Новомосковский">
+                            <label for="region-11">Новомосковский</label>
+                        </li>
+                    </ul>
+                    <div>
+                        <a href="#" class="modal__step-btn modal__step-btn--next">Вызвать мастера</a>
+                    </div>
                 </div>
 
-                <input type="text" name="budget" placeholder="Бюджет" class="modal__input-budget">
-                <input type="text" name="name" placeholder="Имя">
-                <input type="text" name="company" placeholder="Компания">
-                <input type="email" name="email" placeholder="E-mail">
-                <div class="modal__tel-wrap">
-                    <div>+7</div>
-                    <input required="" type="tel" name="phone" placeholder="(ХХХ) ХХХ ХХ ХХ">
+                <div class="modal__step modal__step--2 ">
+                    <h2>Вызвать мастера</h2>
+                    <input type="text" placeholder="Ваше имя">
+                    <input type="tel" placeholder="+7 (">
+                    <input type="submit" value="Вызвать мастера">
+
+                    <div>
+                        <a href="#" class="modal__step-btn modal__step-btn--prev"></a>
+                    </div>
                 </div>
-                <input type="submit" value="Отправить бриф">
             </form>
+
             <button class="modal__close" data-micromodal-close></button>
         </div>
     </div>
 </div>
-
 
 </body>
 </html>

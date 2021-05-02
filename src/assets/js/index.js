@@ -10,8 +10,7 @@ import 'lightgallery.js';
 import './map.js';
 import './tabList.js';
 import './dropDownCity.js';
-
-
+import './modalSteps.js';
 
 
 if (document.querySelector('.js-choice') !== null) {
@@ -49,15 +48,13 @@ MicroModal.init({
     awaitCloseAnimation: true,
 });
 
-document.querySelector(".click").click();
 
 
-
-var filterButtons = document.querySelectorAll(".filter__btn");
-var filterDropdown = '';
+let filterButtons = document.querySelectorAll(".filter__btn");
+let filterDropdown = '';
 
 window.addEventListener('click', function (event) {
-    for (var button of filterButtons) {
+    for (let button of filterButtons) {
 
         filterDropdown = button.nextElementSibling;
 
@@ -84,34 +81,39 @@ document.querySelectorAll('input[type="tel"]').forEach(el => {
 
 //Плавная прокрутка
 const anchors = document.querySelectorAll('a[href*="#"]');
+let blockID = '';
+
 for (let anchor of anchors) {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
+    if (anchor.getAttribute('href') != "#") {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
 
-        let blockID = anchor.getAttribute('href');
-        blockID = blockID.substring(blockID.lastIndexOf("#"));
+            blockID = anchor.getAttribute('href');
+            blockID = blockID.substring(blockID.lastIndexOf("#"));
 
-        document.querySelector(blockID).scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
+            document.querySelector(blockID).scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            })
         })
-    })
+    }
 }
 
-
 new Swiper('.company__more-services .swiper-container', {
-    resistanceRatio : .45,
+    resistanceRatio: .45,
     slidesPerView: 'auto',
     freeMode: true,
 });
 
 
 FlexMasonry.init('.types-equipment__list', {
-    // responsive: true,
-    // responsive: false,
-    // numCols: 2,
-    breakpointCols : {
-        'min-width: 992px' : 2 ,
-        'min-width: 768px' : 1 ,
+    breakpointCols: {
+        'min-width: 992px': 2,
+        'min-width: 768px': 1,
     }
 });
+
+
+
+
+

@@ -1,5 +1,5 @@
-var btnMenuMobile = document.querySelector(".header-city");
-var menuMobile = document.querySelector(".header-city ul");
+let btnMenuMobile = document.querySelector(".header-city");
+let menuMobile = document.querySelector(".header-city ul");
 
 window.addEventListener('click', function (event) {
     if (btnMenuMobile.contains(event.target) && !menuMobile.contains(event.target)) {
