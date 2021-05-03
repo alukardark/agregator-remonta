@@ -31,5 +31,8 @@
     text-align: center;
     color: #283B50;
     transition: .2s ease-in-out color, .2s ease-in-out background;
+    &:hover{
+      background: #D8E2EA;
+    }
   }
 }

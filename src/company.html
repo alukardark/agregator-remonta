@@ -47,7 +47,7 @@
 
                             <div class="company__btns-wrap">
                                 <a href="tel:+7 (495) 241-22-56" class="company__tel">+7 (495) 241-22-56</a>
-                                <a href="#" class="company__master" data-custom-open="master">Вызвать мастера</a>
+                                <a href="javascript://" class="company__master" data-custom-open="master">Вызвать мастера</a>
                             </div>
                         </div>
 
@@ -89,7 +89,7 @@
                                         <div class="company__about-btns">
                                             <a href="tel:+7 (495) 241-22-56" class="company__tel">+7 (495) 241-22-56</a>
 
-                                            <a href="#" class="company__master" data-custom-open="master">Вызвать мастера</a>
+                                            <a href="javascript://" class="company__master" data-custom-open="master">Вызвать мастера</a>
                                         </div>
                                     </div>
                                 </div>
@@ -137,7 +137,7 @@
                                                     <span>сотрудников</span>
                                                 </li>
                                             </ul>
-                                            <a href="#" class="company__about-master" data-custom-open="master">Вызвать мастера</a>
+                                            <a href="javascript://" class="company__about-master" data-custom-open="master">Вызвать мастера</a>
                                         </div>
                                     </div>
 
@@ -813,9 +813,6 @@
     </footer>
 </div>
 
-<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-
-
 <div class="modal micromodal-slide modal--master" id="master" data-micromodal-close>
     <div class="modal__overlay" data-micromodal-close>
         <div class="modal__container ">
@@ -826,7 +823,7 @@
                             r="30"></circle>
                 </svg>
 
-                <div class="modal__step modal__step--1 hide">
+                <div class="modal__step modal__step--1 ">
                     <h3>География обслуживания</h3>
                     <div class="modal__select-title">Выберите станцию метро</div>
                     <div class="modal__row">
@@ -913,12 +910,12 @@
                             <label for="region-11">Новомосковский</label>
                         </li>
                     </ul>
-                    <div>
+                    <div class="w-100">
                         <a href="#" class="modal__step-btn modal__step-btn--next">Вызвать мастера</a>
                     </div>
                 </div>
 
-                <div class="modal__step modal__step--2 ">
+                <div class="modal__step modal__step--2 hide">
                     <h2>Вызвать мастера</h2>
                     <input type="text" placeholder="Ваше имя">
                     <input type="tel" placeholder="+7 (">
@@ -934,6 +931,8 @@
         </div>
     </div>
 </div>
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
 </body>
 </html>

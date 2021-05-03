@@ -1,21 +1,18 @@
-.filter-row .simplebar-content {
-  padding-right: 23px !important;
-  padding-left: 10px !important;
-}
-
 .filter-row .simplebar-track.simplebar-horizontal {
   display: none;
 }
+
 .simplebar-scrollbar {
   width: 5px;
   right: 0px;
 }
+
 .simplebar-scrollbar:before {
   background: #2F76FE;
   opacity: 1 !important;
 }
 
-.simplebar-track.simplebar-horizontal .simplebar-scrollbar{
+.simplebar-track.simplebar-horizontal .simplebar-scrollbar {
   height: 5px;
   top: 0px;
   background: #2F76FE;
@@ -29,15 +26,36 @@
   border-radius: 14px;
 }
 
-.simplebar-track.simplebar-horizontal{
+.simplebar-track.simplebar-horizontal {
   height: 5px;
   background: #E9F0F6;
   cursor: pointer;
   border-radius: 14px;
 }
+
 .simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
   opacity: 1;
+  top: 0px;
+  bottom: 0px;
 }
 
 
 
+.modal-map .simplebar-scrollbar {
+  width: 6px;
+}
+.modal-map .simplebar-track.simplebar-vertical {
+  width: 6px;
+  //right: -7px;
+}
+.modal-map .simplebar-track {
+  //right: -7px;
+}
+.modal-map .simplebar-mask{
+  //right: -7px;
+}
+
+.modal-map .simplebar-track.simplebar-horizontal {
+  opacity: 0;
+  visibility: hidden;
+}

@@ -229,14 +229,25 @@
 
 @media (max-width: $sm) {
   .modal {
+    h3{
+      margin-bottom: 0px;
+    }
+    .choices__inner {
+      height: 45px;
+    }
     &__step-btn {
       &--next {
-        height: 37px;
+        height: 45px;
+        width: 100%;
       }
     }
     .choices {
       margin-right: 0;
       min-width: auto;
+    }
+    &__select-title{
+      margin-bottom: 20px;
+      margin-top: 30px;
     }
   }
 }

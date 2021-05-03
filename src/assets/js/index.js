@@ -117,3 +117,4 @@ FlexMasonry.init('.types-equipment__list', {
 
 
 
+document.querySelector('.base__show-map a').click();

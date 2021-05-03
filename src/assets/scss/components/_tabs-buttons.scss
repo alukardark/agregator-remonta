@@ -10,7 +10,6 @@
   justify-content: space-between;
 }
 .tab-button{
-
   background: #E9F0F6;
   border-radius: 4px;
   display: flex;
@@ -27,6 +26,9 @@
   padding: 10px;
   transition: .2s ease-in-out all;
   cursor: pointer;
+  &:hover{
+    background: #D8E2EA;
+  }
   &.active{
     border-bottom-color: #F5F8FB;
     border-radius:  4px 4px 0 0;

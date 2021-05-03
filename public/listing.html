@@ -56,12 +56,14 @@
 
             <div class="container case">
 
-                <div class="breadcrumbs">
-                    <ul>
-                        <li><a href="/">Главная</a></li>
-                        <li><a href="#">Ремонт</a></li>
-                        <li><a href="#">Ремонт стиральных машин</a></li>
-                    </ul>
+                <div class="breadcrumbs-wrap">
+                    <div class="breadcrumbs">
+                        <ul>
+                            <li><a href="/">Главная</a></li>
+                            <li><a href="#">Ремонт</a></li>
+                            <li><a href="#">Ремонт стиральных машин</a></li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="base">
@@ -83,7 +85,6 @@
                         <li><a href="#">Gorenje</a></li>
                         <li><a href="#">Еще</a></li>
                     </ul>
-
 
                     <form action="#" method="POST">
                         <div class="filter-row">
@@ -232,7 +233,7 @@
                     </form>
 
                     <div class="base__show-map">
-                        <a href="#">Показать на карте</a>
+                        <a href="#" data-custom-open="modal-map">Показать на карте</a>
                     </div>
                     <div class="base__services-found">
                         Найдено 166 сервисных центров
@@ -240,141 +241,239 @@
 
                     <div class="card">
 
+                        <div class="card__row">
                             <div class="card__top">
-                                <img src="../img/ruki-iz-plech.png">
-                                <div class="card__logo" style="background-image: url('../img/ruki-iz-plech.png');"></div>
-                                <div class="card__logo" style="background-image: url('./img/ruki-iz-plech.png');"></div>
-                                <div class="card__name-block">
-                                    <a href="#" class="card__name" >Руки из плеч</a>
-                                    <div class="card__tagline">Все ремонтируют здесь!</div>
-                                    <div class="card__rating">
-                                        <span class="card__rate">4.91</span>
-                                        <span class="card__count">247 оценок и отзывов</span>
+                                <div class="card__header">
+                                    <div class="card__logo"
+                                         style="background-image: url('../img/ruki-iz-plech.png');"></div>
+                                    <div class="card__name-block">
+                                        <a href="#" class="card__name">Руки из плеч</a>
+                                        <div class="card__tagline">Все ремонтируют здесь!</div>
+
+                                        <div class="card__rating">
+                                            <span class="card__rate">4.91</span>
+                                            <span class="card__count-reviews">– 277 оценок и отзывов</span>
+                                        </div>
                                     </div>
                                 </div>
+
+                                <div class="card__rating card__rating--mobile">
+                                    <span class="card__rate">4.91</span>
+                                    <span class="card__count-reviews">– 277 оценок и отзывов</span>
+                                </div>
+
                                 <div class="card__contacts">
                                     <a href="tel:+74952412256" class="card__tel">8 (495) 241-22-56</a>
                                     <div class="card__work-time">Пн-Пт 9:00-18:00</div>
                                 </div>
                             </div>
-
-
+                        </div>
+                        <div class="card__row">
                             <ul class="card__services">
-                                <li>Ремонт ноутбуков любых производителей <span class="text-muted">(основная специализация)</span></li>
+                                <li>Ремонт ноутбуков любых производителей <span class="text-muted">(основная специализация)</span>
+                                </li>
                             </ul>
-                            <ul class="tags">
+                            <ul class="card__tags">
                                 <li>срочный ремонт</li>
                                 <li>выезд мастера</li>
                                 <li>вызов курьера</li>
                                 <li>бесплатная диагностика</li>
                             </ul>
+                        </div>
 
-                            <div class="row">
-                                <div class="col-5 rborder">
-                                    <div class="preims">
-                                        <div class="title">Преимущества</div>
-                                        <div class="preim">Срочный ремонт любого ноутбука</div>
-                                        <div class="preim">Доставка ноутбука в сервисный центр</div>
-                                        <div class="preim">Выезд мастера на дом</div>
-                                        <div class="preim">Гарантия на работы 1 год</div>
+                        <div class="card__row">
+                            <ul class="card__addresses">
+                                <li class="card__address">
+                                    <div class="card__address-box">
+                                        <div class="card__metro"><i style="background-color: #488424;"></i>Новокузнецкая
+                                        </div>
+                                        <div class="card__street">ул. Пятницкая, д.18, с.4</div>
+                                        <div class="card__address-work-time">Сегодня работает до 21:00</div>
                                     </div>
+                                    <div class="card__btns">
+                                        <a href="#" class="card__route">Маршрут</a>
+                                        <a href="#" class="card__courier">Вызвать курьера</a>
+                                    </div>
+                                </li>
+                                <li class="card__address">
+                                    <div class="card__address-box">
+                                        <div class="card__metro"><i style="background-color: #D93821;"></i>Зорге</div>
+                                        <div class="card__street">ул. Маршала Бирюзова, д.1</div>
+                                        <div class="card__address-work-time">Сегодня работает до 21:00</div>
+                                    </div>
+                                    <div class="card__btns">
+                                        <a href="#" class="card__route">Маршрут</a>
+                                        <a href="#" class="card__courier">Вызвать курьера</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card__row">
+                            <div class="card__gallery lightgallery">
+                                <a href="../img/gallery-1.jpg"
+                                   style="background-image: url(../img/gallery-1.jpg);"></a>
+                                <a href="../img/gallery-2.jpg"
+                                   style="background-image: url(../img/gallery-2.jpg);"></a>
+                                <a href="../img/gallery-3.jpg"
+                                   style="background-image: url(../img/gallery-3.jpg);"></a>
+                                <a href="../img/gallery-4.jpg"
+                                   style="background-image: url(../img/gallery-4.jpg);"></a>
+                                <a href="../img/gallery-5.jpg"
+                                   style="background-image: url(../img/gallery-5.jpg);"></a>
+                                <a href="../img/gallery-6.jpg"
+                                   style="background-image: url(../img/gallery-6.jpg);"></a>
+                                <a href="../img/gallery-1.jpg"
+                                   style="background-image: url(../img/gallery-1.jpg);"></a>
+                            </div>
+
+                            <div class="card__prices">
+                                <div class="card__prices-box">
+                                    <h3>Цены</h3>
+                                    <ul>
+                                        <li>Замена фильтра от 1 500 руб.</li>
+                                        <li>Ремонт двигателя от 3 500 руб.</li>
+                                        <li>Замена щеток от 1 900 руб.</li>
+                                        <li><a href="#">Посмотреть полный прайс-лист</a></li>
+                                    </ul>
                                 </div>
-                                <div class="col-7">
-                                    <div class="d-flex justify-content-between">
-                                        <div class="flex-shrink-1"><img
-                                                data-src="https://img3.service-centers.ru/media/cache/minimap/a1-9m-7g-80"
-                                                width="150" height="150" class="me-2 lazyloaded"
-                                                alt="Руки из плеч на карте Москвы"
-                                                src="https://img3.service-centers.ru/media/cache/minimap/a1-9m-7g-80">
-                                        </div>
-                                        <div class="flex-grow-1">
-                                            <div class="addresses">
-                                                <div class="address"><span class="metro"><i class="fas fa-subway"
-                                                                                            style="color: #029A55"></i> м. Новокузнецкая</span>,
-                                                    ул. Пятницкая, д. 18, стр. 4
-                                                    <br>
-                                                    <div class="work-time rendered"
-                                                         data-schedule="{&quot;mon&quot;:{&quot;from&quot;:&quot;09:00&quot;,&quot;to&quot;:&quot;21:00&quot;},&quot;sat&quot;:{&quot;from&quot;:&quot;10:00&quot;,&quot;to&quot;:&quot;20:00&quot;},&quot;sun&quot;:{&quot;from&quot;:&quot;10:00&quot;,&quot;to&quot;:&quot;20:00&quot;}}"
-                                                         data-time-comment="Звоните с 7:00 до 24:00. Недорогой курьер."
-                                                         data-bs-original-title="" title=""><i
-                                                            class="fal fa-clock text-danger"></i> <span>Откроется завтра в 09:00</span>
-                                                    </div>
-                                                </div>
-                                                <div class="address"><span class="metro"><i class="fas fa-subway"
-                                                                                            style="color: #BE2D2C"></i> м. Зорге</span>,
-                                                    ул. Маршала Бирюзова, д. 1
-                                                    <br>
-                                                    <div class="work-time rendered"
-                                                         data-schedule="{&quot;mon&quot;:{&quot;from&quot;:&quot;09:00&quot;,&quot;to&quot;:&quot;21:00&quot;},&quot;sat&quot;:{&quot;from&quot;:&quot;10:00&quot;,&quot;to&quot;:&quot;20:00&quot;},&quot;sun&quot;:{&quot;from&quot;:&quot;10:00&quot;,&quot;to&quot;:&quot;20:00&quot;}}"
-                                                         data-time-comment="Звоните с 7:00 до 24:00. Недорогой курьер."
-                                                         data-bs-original-title="" title=""><i
-                                                            class="fal fa-clock text-danger"></i> <span>Откроется завтра в 09:00</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="card__callback">
+                                    <a href="#" class="card__callback-master card__route">Вызвать мастера</a>
+                                    <a href="#" class="card__callback-courier card__courier">Вызвать курьера</a>
+                                    <a href="#" class="card__callback-specialist">Звонок специалиста</a>
                                 </div>
                             </div>
-                            <hr>
-                            <div class="row photos g-2" lg-uid="lg0">
-                                <div class="col-2">
-                                    <div class="photo"
-                                         data-src="https://img2.service-centers.ru/media/cache/center_photo_800x600/images/center-photo/5756a974c3218.jpg">
-                                        <img data-src="https://img3.service-centers.ru/media/cache/center_photo_desktop_listing/images/center-photo/5756a974c3218.jpg"
-                                             alt="Рабочее место -1" title="Рабочее место -1" width="220" height="150"
-                                             class="mb-1 photo-img lazyloaded"
-                                             src="https://img3.service-centers.ru/media/cache/center_photo_desktop_listing/images/center-photo/5756a974c3218.jpg">
-                                    </div>
-                                </div>
-                                <div class="col-2">
-                                    <div class="photo"
-                                         data-src="https://img3.service-centers.ru/media/cache/center_photo_800x600/images/center-photo/5756a995595ef.jpg">
-                                        <img data-src="https://img3.service-centers.ru/media/cache/center_photo_desktop_listing/images/center-photo/5756a995595ef.jpg"
-                                             alt="Рабочее место -2" title="Рабочее место -2" width="220" height="150"
-                                             class="mb-1 photo-img lazyloaded"
-                                             src="https://img3.service-centers.ru/media/cache/center_photo_desktop_listing/images/center-photo/5756a995595ef.jpg">
-                                    </div>
-                                </div>
-                                <div class="col-2">
-                                    <div class="photo"
-                                         data-src="https://img3.service-centers.ru/media/cache/center_photo_800x600/images/center-photo/5756a995596d5.jpg">
-                                        <img data-src="https://img2.service-centers.ru/media/cache/center_photo_desktop_listing/images/center-photo/5756a995596d5.jpg"
-                                             alt="Рабочее место - 3" title="Рабочее место - 3" width="220" height="150"
-                                             class="mb-1 photo-img lazyloaded"
-                                             src="https://img2.service-centers.ru/media/cache/center_photo_desktop_listing/images/center-photo/5756a995596d5.jpg">
-                                    </div>
-                                </div>
-                                <div class="col-2">
-                                    <div class="photo"
-                                         data-src="https://img3.service-centers.ru/media/cache/center_photo_800x600/images/center-photo/5756a9b944bb4.jpg">
-                                        <img data-src="https://img.service-centers.ru/media/cache/center_photo_desktop_listing/images/center-photo/5756a9b944bb4.jpg"
-                                             alt="Рабочее место - 4" title="Рабочее место - 4" width="220" height="150"
-                                             class="mb-1 photo-img lazyloaded"
-                                             src="https://img.service-centers.ru/media/cache/center_photo_desktop_listing/images/center-photo/5756a9b944bb4.jpg">
-                                    </div>
-                                </div>
-                                <div class="col-2">
-                                    <div class="photo"
-                                         data-src="https://img.service-centers.ru/media/cache/center_photo_800x600/images/center-photo/5756a9b944c96.jpg">
-                                        <img data-src="https://img3.service-centers.ru/media/cache/center_photo_desktop_listing/images/center-photo/5756a9b944c96.jpg"
-                                             alt="Рабочее место - 5" title="Рабочее место - 5" width="220" height="150"
-                                             class="mb-1 photo-img lazyloaded"
-                                             src="https://img3.service-centers.ru/media/cache/center_photo_desktop_listing/images/center-photo/5756a9b944c96.jpg">
-                                    </div>
-                                </div>
-                                <div class="col-2">
-                                    <div class="photo"
-                                         data-src="https://img.service-centers.ru/media/cache/center_photo_800x600/images/center-photo/5756a9dab40a8.jpg">
-                                        <img data-src="https://img2.service-centers.ru/media/cache/center_photo_desktop_listing/images/center-photo/5756a9dab40a8.jpg"
-                                             alt="Рабочее место - 6" title="Рабочее место - 6" width="220" height="150"
-                                             class="mb-1 photo-img lazyloaded"
-                                             src="https://img2.service-centers.ru/media/cache/center_photo_desktop_listing/images/center-photo/5756a9dab40a8.jpg">
-                                    </div>
-                                </div>
+
+
+                        </div>
+
+                        <div class="card__review">
+                            <div class="card__review-top">
+                                <h3>Последние отзывы о сервисе</h3>
+                                <a href="#" class="card__review-all">Смотреть все отзывы</a>
                             </div>
+
+                            <div class="card__review-item">
+                                <div class="card__review-text">
+                                    <div class="card__review-box">
+                                        <div class="card__review-avatar"
+                                             style="background-image: url(../img/avatar.svg);"></div>
+                                        <div class="card__review-name">Виталий оценил(а) на 5 звезд</div>
+                                    </div>
+
+                                    <div class="card__stars card__stars--5">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+
+                                <p>Обратился с ремонтом кофемашины, до этого была в другом срвисе, где не смогли
+                                    сделать. Спасибо за честную работу</p>
+                            </div>
+
+                            <a href="#" class="card__review-all card__review-all--mobile">Смотреть все отзывы</a>
+                        </div>
+
+
                     </div>
 
+                    <ul class="pagination">
+                        <li class="pagination__prev"><a href="#"></a></li>
+                        <li><a href="#" class="active">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li class="pagination__next"><a href="#"></a></li>
+                    </ul>
+
+                    <div class="master-call">
+
+                        <form action="">
+                            <h2>Вызов мастера для ремонта стиральной машины</h2>
+                            <textarea placeholder="Опишите поломку или задайте вопрос"></textarea>
+                            <input type="text" placeholder="Ваше имя">
+                            <input type="tel" placeholder="+7 (">
+                            <input type="submit" value="Отправить">
+                        </form>
+
+                        <div class="master-call__img"></div>
+                    </div>
+
+                    <div class="base__map" id="map"></div>
+
+                    <div class="average-prices">
+                        <h2>Средние цены на ремонт стиральных машин в Москве</h2>
+                        <div data-scroll>
+                            <ul>
+                                <li><a href="#">Замена подшипника <strong>от 3 800 до 6 800 руб.</strong></a></li>
+                                <li><a href="#">Замена стекла <strong>от 900 до 1 400 руб.</strong></a></li>
+                                <li><a href="#">Замена УБЛ <strong>от 900 до 1 500 руб.</strong></a></li>
+                                <li><a href="#">Замена щеток <strong>от 1 200 до 2 400 руб.</strong></a></li>
+                                <li><a href="#">Ремонт электроники <strong>от 2 800 до 7 700 руб.</strong></a></li>
+                                <li><a href="#">Чистка сливного насоса <strong>от 800 до 1 200 руб.</strong></a></li>
+                                <li><a href="#">Замена конденсатора <strong>от 800 до 1 100 руб.</strong></a></li>
+                                <li><a href="xxxHTMLLINKxxx0.449349296407161040.4235487361204169xxx">Вскрытие дверцы <strong>от 800 до 1 200 руб.</strong></a></li>
+                                <li><a href="#">Ремонт дозатора <strong>от 800 до 1 300 руб.</strong></a></li>
+                                <li><a href="#">Замена датчика уровня воды <strong>от 800 до 1 200 руб.</strong></a>
+                                </li>
+                                <li><a href="#">Замена сальника <strong>от 1 100 до 1 900 руб.</strong></a></li>
+
+                                <li><a href="#">Замена подшипника <strong>от 3 800 до 6 800 руб.</strong></a></li>
+                                <li><a href="#">Замена стекла <strong>от 900 до 1 400 руб.</strong></a></li>
+                                <li><a href="#">Замена УБЛ <strong>от 900 до 1 500 руб.</strong></a></li>
+                                <li><a href="#">Замена щеток <strong>от 1 200 до 2 400 руб.</strong></a></li>
+                                <li><a href="#">Ремонт электроники <strong>от 2 800 до 7 700 руб.</strong></a></li>
+                                <li><a href="#">Чистка сливного насоса <strong>от 800 до 1 200 руб.</strong></a></li>
+                                <li><a href="#">Замена конденсатора <strong>от 800 до 1 100 руб.</strong></a></li>
+                                <li><a href="xxxHTMLLINKxxx0.091387548136767420.700426623831971xxx">Вскрытие дверцы <strong>от 800 до 1 200 руб.</strong></a></li>
+                                <li><a href="#">Ремонт дозатора <strong>от 800 до 1 300 руб.</strong></a></li>
+                                <li><a href="#">Замена датчика уровня воды <strong>от 800 до 1 200 руб.</strong></a>
+                                </li>
+                                <li><a href="#">Замена сальника <strong>от 1 100 до 1 900 руб.</strong></a></li>
+
+                                <li><a href="#">Замена подшипника <strong>от 3 800 до 6 800 руб.</strong></a></li>
+                                <li><a href="#">Замена стекла <strong>от 900 до 1 400 руб.</strong></a></li>
+                                <li><a href="#">Замена УБЛ <strong>от 900 до 1 500 руб.</strong></a></li>
+                                <li><a href="#">Замена щеток <strong>от 1 200 до 2 400 руб.</strong></a></li>
+                                <li><a href="#">Ремонт электроники <strong>от 2 800 до 7 700 руб.</strong></a></li>
+                                <li><a href="#">Чистка сливного насоса <strong>от 800 до 1 200 руб.</strong></a></li>
+                                <li><a href="#">Замена конденсатора <strong>от 800 до 1 100 руб.</strong></a></li>
+                                <li><a href="xxxHTMLLINKxxx0.8463301636940550.7732375258934625xxx">Вскрытие дверцы <strong>от 800 до 1 200 руб.</strong></a></li>
+                                <li><a href="#">Ремонт дозатора <strong>от 800 до 1 300 руб.</strong></a></li>
+                                <li><a href="#">Замена датчика уровня воды <strong>от 800 до 1 200 руб.</strong></a>
+                                </li>
+                                <li><a href="#">Замена сальника <strong>от 1 100 до 1 900 руб.</strong></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="what-repaired">
+                        <h2>Что еще можно отремонтировать</h2>
+
+                        <ul>
+                            <li><a href="#">Indesit</a></li>
+                            <li><a href="#">Замена манжеты люка</a></li>
+                            <li><a href="#">Замена церкуляционного насоса</a></li>
+                            <li><a href="#">Замена заливного шланга</a></li>
+                            <li><a href="#">Замена приводного ремня</a></li>
+                            <li><a href="#">Чистка сливного фильтра</a></li>
+                            <li><a href="#">Замена люка</a></li>
+                            <li><a href="#">Замена сливного насоса</a></li>
+                            <li><a href="#">Замена шкава барабана</a></li>
+                        </ul>
+
+                        <div class="d-more">
+                            <a href="#" class="flex">
+                                <span>Показать все</span>
+                                <i></i>
+                            </a>
+                        </div>
+
+                    </div>
 
                 </div>
 
@@ -383,39 +482,26 @@
                         <h3>Средние цены в Москве</h3>
                         <ul class="aside__price-list">
                             <li>
-                                <a href="#">
-                                    Замена подшипника в стиральной машине <strong>от 3800 до 6 800 pyб.</strong>
-                                </a>
+                                <a href="#">Замена подшипника в стиральной машине <strong>от 3800 до 6 800 pyб.</strong></a>
                             </li>
                             <li>
-                                <a href="#">
-                                    Замена уплотнителя (манжеты) <strong>от 1100 до 1 700 pyб.</strong>
-                                </a>
+                                <a href="#">Замена уплотнителя (манжеты) <strong>от 1100 до 1 700 pyб.</strong></a>
                             </li>
                             <li>
-                                <a href="#">
-                                    Замена ТЭНа стиральной машины <strong>от 1300 до 3 000 pyб.</strong>
-                                </a>
+                                <a href="#">Замена ТЭНа стиральной машины <strong>от 1300 до 3 000 pyб.</strong></a>
                             </li>
                             <li>
-                                <a href="#">
-                                    Замена стекла <strong>от 900 до 1 400 pyб.</strong>
-                                </a>
+                                <a href="#">Замена стекла <strong>от 900 до 1 400 pyб.</strong></a>
                             </li>
                             <li>
-                                <a href="#">
-                                    Замена насоса (помпы) стиральной машины <strong>от 2300 до 4300 pyб.</strong>
-                                </a>
+                                <a href="#">Замена насоса (помпы) стиральной машины <strong>от 2300 до 4300
+                                    pyб.</strong></a>
                             </li>
                             <li>
-                                <a href="#">
-                                    Замена электронного модуля <strong>от 2800 до 9 400 pyб.</strong>
-                                </a>
+                                <a href="#">Замена электронного модуля <strong>от 2800 до 9 400 pyб.</strong></a>
                             </li>
                             <li>
-                                <a href="#">
-                                    Замена УБЛ <strong>от 900 до 1 500 pyб.</strong>
-                                </a>
+                                <a href="#">Замена УБЛ <strong>от 900 до 1 500 pyб.</strong></a>
                             </li>
                         </ul>
 
@@ -501,6 +587,155 @@
     </footer>
 
 </div>
+
+<div class="modal-map micromodal-slide modal--master" id="modal-map" data-micromodal-close>
+    <div class="modal__container">
+
+        <div class="modal-map__wrap">
+            <div class="modal-map__aside">
+
+                <a href="#" class="modal-map__close" data-micromodal-close>Закрыть карту</a>
+                <a href="#" class="modal-map__filters">Фильтры</a>
+
+                <div class="modal-map__list-scroll-wrap">
+                    <div class="modal-map__list-scroll">
+                        <ul class="modal-map__list" data-scroll>
+
+                            <li><a href="#" data-marker="marker-0">
+                                    <span class="modal-map__item-wrap">
+                                        <span class="modal-map__item-box">
+                                            <span class="modal-map__item-title">Бюро ремонта</span>
+                                            <span class="modal-map__item-rating">
+                                                <span class="card__stars card__stars--5">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </span>
+                                                <span class="modal-map__item-reviews">2 отзыва</span>
+                                            </span>
+                                        </span>
+                                        <span class="modal-map__img"
+                                              style="background-image: url(../img/logo-1.jpg);"></span>
+                                    </span>
+
+                                <span class="modal-map__item-address">
+                                    Семёновская площадь, 1А
+                                </span>
+                            </a></li>
+
+                            <li><a href="#" data-marker="marker-1">
+                                    <span class="modal-map__item-wrap">
+                                        <span class="modal-map__item-box">
+                                            <span class="modal-map__item-title">Утюжок</span>
+                                            <span class="modal-map__item-rating">
+                                                <span class="card__stars card__stars--5">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </span>
+                                                <span class="modal-map__item-reviews">4 отзыва</span>
+                                            </span>
+                                        </span>
+                                        <span class="modal-map__img"
+                                              style="background-image: url(../img/logo-2.jpg);"></span>
+                                    </span>
+
+                                <span class="modal-map__item-address">
+                                    Измайловский бул., 43
+                                </span>
+                            </a></li>
+
+                            <li><a href="#" data-marker="marker-2">
+                                    <span class="modal-map__item-wrap">
+                                        <span class="modal-map__item-box">
+                                            <span class="modal-map__item-title">Help-Holodilnik</span>
+                                            <span class="modal-map__item-rating">
+                                                <span class="card__stars card__stars--5">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </span>
+                                                <span class="modal-map__item-reviews">4 отзыва</span>
+                                            </span>
+                                        </span>
+                                        <span class="modal-map__img"
+                                              style="background-image: url(../img/logo-3.jpg);"></span>
+                                    </span>
+
+                                <span class="modal-map__item-address">
+                                    ул. Академика Пилюгина, д. 22
+                                </span>
+                            </a></li>
+
+                            <li><a href="#" data-marker="marker-3">
+                                    <span class="modal-map__item-wrap">
+                                        <span class="modal-map__item-box">
+                                            <span class="modal-map__item-title">Рем-Сервис24</span>
+                                            <span class="modal-map__item-rating">
+                                                <span class="card__stars card__stars--5">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </span>
+                                                <span class="modal-map__item-reviews">4 отзыва</span>
+                                            </span>
+                                        </span>
+                                        <span class="modal-map__img"
+                                              style="background-image: url(../img/logo-4.jpg);"></span>
+                                    </span>
+
+                                <span class="modal-map__item-address">
+                                    1-я Тверская-Ямская улица, 6
+                                </span>
+                            </a></li>
+
+                            <li><a href="#" data-marker="marker-4">
+                                    <span class="modal-map__item-wrap">
+                                        <span class="modal-map__item-box">
+                                            <span class="modal-map__item-title">Repair</span>
+                                            <span class="modal-map__item-rating">
+                                                <span class="card__stars card__stars--5">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </span>
+                                                <span class="modal-map__item-reviews">4 отзыва</span>
+                                            </span>
+                                        </span>
+                                        <span class="modal-map__img"
+                                              style="background-image: url(../img/logo-5.jpg);"></span>
+                                    </span>
+
+                                <span class="modal-map__item-address">
+                                    Измайловский бул., 43
+                                </span>
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-map__map" id="map-modal"></div>
+        </div>
+
+
+    </div>
+</div>
+
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+
+
 
 
 <script type="text/javascript" src="js/bundle.min.js"></script></body>

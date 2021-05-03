@@ -233,7 +233,7 @@
                     </form>
 
                     <div class="base__show-map">
-                        <a href="#">Показать на карте</a>
+                        <a href="#" data-custom-open="modal-map">Показать на карте</a>
                     </div>
                     <div class="base__services-found">
                         Найдено 166 сервисных центров
@@ -588,7 +588,155 @@
 
 </div>
 
+<div class="modal-map micromodal-slide modal--master" id="modal-map" data-micromodal-close>
+    <div class="modal__container">
+
+        <div class="modal-map__wrap">
+            <div class="modal-map__aside">
+
+                <a href="#" class="modal-map__close" data-micromodal-close>Закрыть карту</a>
+                <a href="#" class="modal-map__filters">Фильтры</a>
+
+                <div class="modal-map__list-scroll-wrap">
+                    <div class="modal-map__list-scroll">
+                        <ul class="modal-map__list" data-scroll>
+
+                            <li><a href="#" data-marker="marker-0">
+                                    <span class="modal-map__item-wrap">
+                                        <span class="modal-map__item-box">
+                                            <span class="modal-map__item-title">Бюро ремонта</span>
+                                            <span class="modal-map__item-rating">
+                                                <span class="card__stars card__stars--5">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </span>
+                                                <span class="modal-map__item-reviews">2 отзыва</span>
+                                            </span>
+                                        </span>
+                                        <span class="modal-map__img"
+                                              style="background-image: url(${require(`./assets/img/logo/logo-1.jpg`)});"></span>
+                                    </span>
+
+                                <span class="modal-map__item-address">
+                                    Семёновская площадь, 1А
+                                </span>
+                            </a></li>
+
+                            <li><a href="#" data-marker="marker-1">
+                                    <span class="modal-map__item-wrap">
+                                        <span class="modal-map__item-box">
+                                            <span class="modal-map__item-title">Утюжок</span>
+                                            <span class="modal-map__item-rating">
+                                                <span class="card__stars card__stars--5">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </span>
+                                                <span class="modal-map__item-reviews">4 отзыва</span>
+                                            </span>
+                                        </span>
+                                        <span class="modal-map__img"
+                                              style="background-image: url(${require(`./assets/img/logo/logo-2.jpg`)});"></span>
+                                    </span>
+
+                                <span class="modal-map__item-address">
+                                    Измайловский бул., 43
+                                </span>
+                            </a></li>
+
+                            <li><a href="#" data-marker="marker-2">
+                                    <span class="modal-map__item-wrap">
+                                        <span class="modal-map__item-box">
+                                            <span class="modal-map__item-title">Help-Holodilnik</span>
+                                            <span class="modal-map__item-rating">
+                                                <span class="card__stars card__stars--5">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </span>
+                                                <span class="modal-map__item-reviews">4 отзыва</span>
+                                            </span>
+                                        </span>
+                                        <span class="modal-map__img"
+                                              style="background-image: url(${require(`./assets/img/logo/logo-3.jpg`)});"></span>
+                                    </span>
+
+                                <span class="modal-map__item-address">
+                                    ул. Академика Пилюгина, д. 22
+                                </span>
+                            </a></li>
+
+                            <li><a href="#" data-marker="marker-3">
+                                    <span class="modal-map__item-wrap">
+                                        <span class="modal-map__item-box">
+                                            <span class="modal-map__item-title">Рем-Сервис24</span>
+                                            <span class="modal-map__item-rating">
+                                                <span class="card__stars card__stars--5">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </span>
+                                                <span class="modal-map__item-reviews">4 отзыва</span>
+                                            </span>
+                                        </span>
+                                        <span class="modal-map__img"
+                                              style="background-image: url(${require(`./assets/img/logo/logo-4.jpg`)});"></span>
+                                    </span>
+
+                                <span class="modal-map__item-address">
+                                    1-я Тверская-Ямская улица, 6
+                                </span>
+                            </a></li>
+
+                            <li><a href="#" data-marker="marker-4">
+                                    <span class="modal-map__item-wrap">
+                                        <span class="modal-map__item-box">
+                                            <span class="modal-map__item-title">Repair</span>
+                                            <span class="modal-map__item-rating">
+                                                <span class="card__stars card__stars--5">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </span>
+                                                <span class="modal-map__item-reviews">4 отзыва</span>
+                                            </span>
+                                        </span>
+                                        <span class="modal-map__img"
+                                              style="background-image: url(${require(`./assets/img/logo/logo-5.jpg`)});"></span>
+                                    </span>
+
+                                <span class="modal-map__item-address">
+                                    Измайловский бул., 43
+                                </span>
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-map__map" id="map-modal"></div>
+        </div>
+
+
+    </div>
+</div>
+
+
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+
+
+
 
 
 </body>
