@@ -145,6 +145,13 @@
       display: none;
     }
   }
+  &__wrap{
+    min-height: 404px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
   &__step-btn {
     &--next {
       width: 182px;
@@ -240,6 +247,10 @@
         height: 45px;
         width: 100%;
       }
+    }
+    &__wrap{
+      height: 45px;
+      width: 100%;
     }
     .choices {
       margin-right: 0;

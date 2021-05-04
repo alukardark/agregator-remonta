@@ -4,6 +4,9 @@ import MicroModal from 'micromodal';
 import Inputmask from "inputmask";
 import SimpleBar from 'simplebar';
 import Swiper from "swiper";
+import {CountUp} from 'countup.js';
+import {accordion} from './squeezebox';
+
 
 import FlexMasonry from "./flexMasonry.js";
 import 'lightgallery.js';
@@ -12,6 +15,7 @@ import './mapModal.js';
 import './tabList.js';
 import './dropDownCity.js';
 import './modalSteps.js';
+import './more-btn.js';
 
 
 if (document.querySelector('.js-choice') !== null) {
@@ -48,7 +52,6 @@ MicroModal.init({
     disableFocus: true,
     awaitCloseAnimation: true,
 });
-
 
 
 let filterButtons = document.querySelectorAll(".filter__btn");
@@ -114,8 +117,25 @@ FlexMasonry.init('.types-equipment__list', {
     }
 });
 
+//Numbers animated
+let numbersAnimate = document.querySelectorAll('.numbers-animated');
+let numbersVal = '';
+let countUp = '';
+numbersAnimate.forEach((el) => {
+    numbersVal = el.textContent.replace(/\s+/g, '');
+    countUp = new CountUp(el, numbersVal, {
+        duration: 1.5,
+        separator: ' ',
+    });
+    countUp.start();
+});
 
 
 
+// document.querySelector('.base__show-map a').click();
 
-document.querySelector('.base__show-map a').click();
+// window.addEventListener('load', function () {
+//     if (!document.querySelector('.services-inner__list')) {
+//         accordion();
+//     }
+// });
