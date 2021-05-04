@@ -10,12 +10,6 @@
 @import
 "~normalize.scss/normalize",
 "~swiper/dist/css/swiper",
-//"~lightgallery.js/dist/css/lightgallery",
-//"vendors/lightgallery",
-//"~badger-accordion/dist/badger-accordion.scss",
-//"vendors/badger-accordion.scss",
-//"~simplebar/dist/simplebar",
-//"vendors/simplebar",
 "~choices.js/public/assets/styles/choices",
 "vendors/choices",
 "vendors/modal",
@@ -67,6 +61,8 @@
 'components/tabs-buttons',
 'components/search',
 'components/region',
-'components/spinner';
+'components/spinner',
+'components/balloon',
+'components/stars';
 
 

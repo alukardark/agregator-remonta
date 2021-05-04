@@ -8,6 +8,7 @@ import Swiper from "swiper";
 import FlexMasonry from "./flexMasonry.js";
 import 'lightgallery.js';
 import './map.js';
+import './mapModal.js';
 import './tabList.js';
 import './dropDownCity.js';
 import './modalSteps.js';

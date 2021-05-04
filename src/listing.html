@@ -361,7 +361,7 @@
                                         <div class="card__review-name">Виталий оценил(а) на 5 звезд</div>
                                     </div>
 
-                                    <div class="card__stars card__stars--5">
+                                    <div class="card__stars stars stars--5">
                                         <span></span>
                                         <span></span>
                                         <span></span>
@@ -593,20 +593,22 @@
 
         <div class="modal-map__wrap">
             <div class="modal-map__aside">
-
-                <a href="#" class="modal-map__close" data-micromodal-close>Закрыть карту</a>
-                <a href="#" class="modal-map__filters">Фильтры</a>
+                <div class="modal-map__filter-wrap">
+                    <a href="#" class="modal-map__close" data-micromodal-close>Закрыть карту</a>
+                    <a href="#" class="modal-map__filters">Фильтры</a>
+                </div>
 
                 <div class="modal-map__list-scroll-wrap">
                     <div class="modal-map__list-scroll">
                         <ul class="modal-map__list" data-scroll>
 
-                            <li><a href="#" data-marker="marker-0">
+                            <li>
+                                <a href="#" data-marker="marker-0">
                                     <span class="modal-map__item-wrap">
                                         <span class="modal-map__item-box">
                                             <span class="modal-map__item-title">Бюро ремонта</span>
                                             <span class="modal-map__item-rating">
-                                                <span class="card__stars card__stars--5">
+                                                <span class="stars stars--5">
                                                     <span></span>
                                                     <span></span>
                                                     <span></span>
@@ -620,17 +622,18 @@
                                               style="background-image: url(${require(`./assets/img/logo/logo-1.jpg`)});"></span>
                                     </span>
 
-                                <span class="modal-map__item-address">
+                                    <span class="modal-map__item-address">
                                     Семёновская площадь, 1А
                                 </span>
-                            </a></li>
+                                </a>
+                            </li>
 
                             <li><a href="#" data-marker="marker-1">
                                     <span class="modal-map__item-wrap">
                                         <span class="modal-map__item-box">
                                             <span class="modal-map__item-title">Утюжок</span>
                                             <span class="modal-map__item-rating">
-                                                <span class="card__stars card__stars--5">
+                                                <span class="stars stars--5">
                                                     <span></span>
                                                     <span></span>
                                                     <span></span>
@@ -654,7 +657,7 @@
                                         <span class="modal-map__item-box">
                                             <span class="modal-map__item-title">Help-Holodilnik</span>
                                             <span class="modal-map__item-rating">
-                                                <span class="card__stars card__stars--5">
+                                                <span class="stars stars--5">
                                                     <span></span>
                                                     <span></span>
                                                     <span></span>
@@ -678,7 +681,7 @@
                                         <span class="modal-map__item-box">
                                             <span class="modal-map__item-title">Рем-Сервис24</span>
                                             <span class="modal-map__item-rating">
-                                                <span class="card__stars card__stars--5">
+                                                <span class="stars stars--5">
                                                     <span></span>
                                                     <span></span>
                                                     <span></span>
@@ -702,7 +705,7 @@
                                         <span class="modal-map__item-box">
                                             <span class="modal-map__item-title">Repair</span>
                                             <span class="modal-map__item-rating">
-                                                <span class="card__stars card__stars--5">
+                                                <span class="stars stars--5">
                                                     <span></span>
                                                     <span></span>
                                                     <span></span>
@@ -725,6 +728,11 @@
                 </div>
             </div>
             <div class="modal-map__map" id="map-modal"></div>
+
+            <div class="modal-map__filter-wrap modal-map__filter-wrap--mobile">
+                <a href="#" class="modal-map__close" data-micromodal-close>Закрыть карту</a>
+                <a href="#" class="modal-map__filters">Фильтры</a>
+            </div>
         </div>
 
 
@@ -733,10 +741,6 @@
 
 
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-
-
-
-
 
 
 </body>
